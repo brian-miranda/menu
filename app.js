@@ -131,7 +131,7 @@ $(document).ready(function(){
 // 	$(".btn_phone").slideToggle(140)
 // });
 
-$('.btn_floated').hover(function (e) { 
+$('.btn_floated').hover(function (e) {
 	e.preventDefault();
 	$(".btn_whats_app").toggle(200)
 	$(".btn_phone").toggle(350)
