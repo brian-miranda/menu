@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DESAYUNO</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="app.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Bevan&family=Dancing+Script&family=Oswald&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<body>
+	<!--<div class="container-fluid p-0">
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#"><img class="img-2" src="https://pendulo.com/archivos/logo-brown.png" alt=""></a>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		</div>
+		<div id="bgfilter" class="black-filter-1"></div>
+		<div class="mb-1--5 relative">
+			<div class="ham">
+				<span onclick="openNav()"><svg height="20" style="fill:#2F5F62" viewbox="0 0 100 80" width="40"><rect height="8" width="100"></rect><rect height="8px" width="100" y="30"></rect><rect height="8" width="100" y="60"></rect></svg>
+				</span>
+			</div>
+		</div>
+	</div>-->
+	<div class="container-xxl">
+		<div class="row">
+			<div class="col-md-12">
+				<img class="logo-1" src="https://pendulo.com/archivos/logo-brown.png" alt="">
+				<span class="center-center">
+					<a class="z-5" href="index.html"><span><i class="fas fa-arrow-left"></span></i></a>
+					<h2 class="subtitle-4">DESAYUNO</h2>
+				</span>
+				<div class="center-center">
+					<span class="mx-10px">
+						<img class="pr-5px" src="https://pendulo.com/archivos/d1.png" alt="">
+						<p class="dancing contents fz-1--5">Nuevo</p>
+					</span>
+					<span class="mx-10px">
+						<img class="pr-5px" src="https://pendulo.com/archivos/d2.png" alt="">
+						<p class="dancing contents fz-1--5">Vegetariano</p>
+					</span>
+					<span class="mx-10px">
+						<img class="pr-5px" src="https://pendulo.com/archivos/d3.png" alt="">
+						<p class="dancing contents fz-1--5">Light</p>
+					</span>
+				</div>
+				<p class="text-2 py-3em">EL MENÚ DE DESAYUNOS ESTÁ DISPONIBLE TODOS LOS DÍAS HASTA LA 1:00 P.M.</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<ul class="nav" id="myTab">
+			<li class="">
+				<a class="nav-link active" data-toggle="tab" href="#desayunos" role="tab" aria-controls="home" aria-selected="true">DESAYUNOS</a>
+			</li>
+			<li class="">
+				<a class="nav-link" data-toggle="tab" href="#comida" role="tab" aria-controls="profile" aria-selected="false">COMIDAS</a>
+			</li>
+			<li class="">
+				<a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">POSTRES</a>
+			</li>
+			<li class="">
+				<a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">BEBIDAS</a>
+			</li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active container" id="desayunos">
+				<div class="row">
+					<div class="col-md-4 text-center">
+		<!--JUGOS-->
+						<img class="w-70 my-2em" src="https://pendulo.com/archivos/jugos2x.png" alt="">
+						<div class="text-left p1 fz-1--5">
+							<p class="name arvo">EL BRAM STOCKER</p>
+							<p class="roboto-condensed brown-text m0">Jitomate y apio preparado con salsa Maggi, salsa inglesa y un toque de limón.</p>
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $65</p>
+							</div>
+
+							<p class="bebas name fz-1--1">El FRESCO DE TAMAYO</p>
+							<p class="roboto-condensed brown-text m0">Sandía con naranja.</p>
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $65</p>
+							</div>
+
+							<p class="name arvo">EL COSTEÑO</p>
+							<p class="roboto-condensed brown-text m0">Papaya,naranja,fresa y plátano.</p>
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $50</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $66</p>
+							</div>
+
+							<p class="name bebas fz-1--1">El GAUGUIN TROPICAL</p>
+							<p class="roboto-condensed brown-text m0">Mango con naranja.</p>
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $50</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $66</p>
+							</div>
+
+							<p class="name arvo">EL GRAN PAPAYA</p>
+							<p class="roboto-condensed brown-text">Papaya,naranja y un toque de miel.</p>
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $65</p>
+							</div>
+
+							<p class="name bebas fz-1--1">El NARAHORIA</p>
+							<p class="roboto-condensed brown-text m0">Naranja y Zanahoria.</p>
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $59</p>
+							</div>
+
+							<p class="name arvo">JUGO ROJO REVITALIZANTE</p>
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $48</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $63</p>
+							</div>
+
+							<p class="name bebas fz-1--1">CLÁSICOS 100% NATURALES</p>
+							<p class="roboto-condensed brown-text m0">Naranja,toronja o zanahoria.</p>
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span>$ 59</p>
+							</div>
+
+							<p class="name arvo flex flex-start">CLAMATO NATURAL <img class="ml-5px" src="https://pendulo.com/archivos/d1.png" alt=""></p>
+							<p class="roboto-condensed brown-text m0">Clásico y refrescante a base de concentrado e jugo de tomate, almeja y especias.</p>
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name roboto-condensed"><span class="mustache-text">330 ml</span></p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"> $48</p>
+							</div>
+		<!--Verde-->
+							<div class="bg-green-light p15px">
+								<p class="title-green">VERDE QUE TE <br> QUIERO VERDE</p>
+								<p class="name arvo">NOPAL DE LUX</p>
+								<div class="flex-rz space-between mb-1--5">
+									<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $59</p>
+								</div>
+								<p class="name bebas fz-1--1">EL VERDE WHITMAN</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $50</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $66</p>
+								</div>
+							</div>
+			<!--HOT CAKES-->
+							<div class="text-center">
+								<img class="w-150 my-2em" src="https://pendulo.com/archivos/hot-cakes1.png" alt="">
+								<div class="flex-rz space-between text-left">
+									<p class="name bebas fz-1--1">CLÁSICOS</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"><span class="mustache-text pr-5px">3 piezas</span>$90</p>
+								</div>
+								<div class="flex-rz space-between text-left">
+									<p class="name oswald brown-light-text">con la fruta de su elección</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"><span class="mustache-text pr-5px">120 g</span>+ $23</p>
+								</div>
+								<div class="flex-rz space-between text-left">
+									<p class="name oswald brown-light-text">con jamón<span class="mustache-text pr-5px"> 40 g</span> o con tocino<span class="mustache-text pr-5px"> 40 g</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">+ $23</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		<!--PAQUETES-->
+					<div class="col-md-4 text-center">
+		 				<img class="w-70 my-2em" src="https://pendulo.com/archivos/paquetes-des2x.png" alt="">
+						<div class="text-left p1 fz-1--5">
+							<p class="roboto-condensed brown-text text-center">Jugo chico (300 ml) de naranja, toronja, zanahoria o narahoria o plato de fruta chico (160 g) y café americano o americano descafeinado o té Twinings de manzanilla-miel-vainilla o hierbabuena.</p>
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name arvo">HUEVOS EN CAZUELA</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 piezas</span>$153</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name bebas fz-1--1">ENCHILADAS SUIZAS, VERDES O ROJAS</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">3 piezas</span>$186</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="brown-text fw-900 m0 arvo nowrap-rz">HUEVOS EN PASILLA KUMALA</p>
+								<span class="line-1"></span>
+								<p class="brown-text roboto-condensed fw-900 m0 nowrap flex flex-end"><span class="mustache-text pr-5px">2 piezas</span>$159</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name bebas fz-1--1">OMELETTE JULIETTE</p>
+								<span class="line-1"></span>
+								<p class="brown-text roboto-condensed fw-900 m0 nowrap"><span class="mustache-text pr-5px">2 piezas</span>$171</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name arvo">HUEVOS LEÑERO</p>
+								<span class="line-1"></span>
+								<p class="brown-text roboto-condensed fw-900 m0 nowrap"><span class="mustache-text pr-5px">2 piezas</span>$169</p>
+							</div>
+
+							<div class="flex-rz space-between">
+								<p class="name bebas fz-1--1">CHILAQUILES CON ARRACHERA</p>
+								<span class="line-1"></span>
+								<p class="brown-text roboto-condensed fw-900 m0 nowrap"><span class="mustache-text pr-5px">200 g</span>$268</p>
+							</div>
+						</div>
+						<img class="w-80 my-2em" src="https://pendulo.com/archivos/chil.png" alt="">
+						<div class="text-left p1 fz-1--5">
+							<div class="flex-rz space-between">
+								<p class="name bebas fz-1--1">CHILAQUILES CRUJIENTES</p>
+								<span class="line-1"></span>
+								<p class="brown-text roboto-condensed fw-900 m0 nowrap"><span class="mustache-text pr-5px">600 g</span>$118</p>
+							</div>
+							<p class="name oswald brown-light-text">Verdes o Rojos</p>
+						</div>
+
+		<!--LO CLÁSICO-->
+						<img class="w-70 my-2em" src="https://pendulo.com/archivos/clasico.png" alt="">
+						<div class="text-left p1 fz-1--5">
+							<div class="flex-rz space-between">
+								<p class="name arvo m0">HUEVOS AL GUSTO</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 piezas</span>$94</p>
+							</div>
+							<p class="oswald mustache-text m0">Naturales, Del rancho, A la mexicana,</p>
+							<div class="flex-rz space-between mb-1--5 br">
+								<p class="name oswald m0 brown-light-text">Con jamón York o tocino</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">+ $23</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name bebas fz-1--1">OMELETTE DEL PÉNDULO</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 piezas</span>$108</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name arvo">HUEVOS EN CAZUELA</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 piezas</span>$104</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name bebas fz-1--1">HUEVOS PÉNDULO</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 piezas</span>$110</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name arvo">HUEVOS ANÄIS</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">1 pieza</span>$137</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name bebas fz-1--1">HUEVOS PAZ</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 piezas</span>$110</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="brown-text fw-900 m0 arvo nowrap-rz">HUEVOS EN PASILLA KUMALA</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed flex flex-end"><span class="mustache-text pr-5px">2 piezas</span>$110</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name bebas fz-1--1">HUEVO MACONDO</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">1 pieza</span>$109</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name arvo">OMELETTE JULIETTE</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 piezas</span>$122</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name bebas fz-1--1">HUEVOS LEÑERO</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 piezas</span>$120</p>
+							</div>
+
+							<div class="flex-rz space-between mb-1--5">
+								<p class="name arvo">MACHACA MONTES</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">375 g</span>$144</p>
+							</div>
+						</div>
+						<img class="w-70 my-2em" src="https://pendulo.com/archivos/pan-dulce.png">
+					</div>
+		<!--PARA EMPEZAR-->
+					<div class="col-md-4 text-center">
+						<img class="w-70 my-2em" src="https://pendulo.com/archivos/empezar2x.png" alt="">
+						<div class="text-left p1 fz-1--5">
+							<div class="flex-rz space-between">
+								<p class="name arvo">PLATO DE FRUTAS DE LA ESTACIÓN</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">320g</span>$72</p>
+							</div>
+							<p class="name oswald">chico <span class="brown-text roboto-condensed fw-900"><span class="mustache-text pr-5px">160g</span>$46</span></p>
+							<p class="name oswald">con queso cottage <span class="mustache-text pr-5px">90g</span>o yogurth<span class="mustache-text pr-5px">100g</span><span class="name roboto-condensed"> + $27</span></p>
+							<p class="name oswald">con granola <span class="mustache-text pr-5px">50g</span><span class="name roboto-condensed"> + $17</span></p>
+
+							<div class="flex-rz space-between mb-1--5 mt-1em">
+								<p class="name bebas fz-1--1">ACAI BOWL <span class="brown-text roboto-condensed pl-5px fz--9">Lleva miel de abeja</span></p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">350g</span>$125</p>
+							</div>
+
+							<div class="flex-rz space-between mt-1em">
+								<p class="name arvo">YOGURT ESPECIAL</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">370g</span>$81</p>
+							</div>
+
+							<div class="flex-rz space-between mt-1em">
+								<p class="name bebas fz-1--1">BISQUETS CLÁSICOS</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">4 mitades</span>$58</p>
+							</div>
+							<p class="name oswald">media orden <span class="brown-text roboto-condensed fw-900"><span class="mustache-text pr-5px">2 mitades</span>$93</span></p>
+
+							<div class="flex-rz space-between mt-1em">
+								<p class="name arvo">MOLLETES CASEROS</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 mitades</span>$93</p>
+							</div>
+
+							<div class="flex-rz space-between mt-1em">
+								<p class="name bebas fz-1--1">MOLLÁRABE</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">1 pieza</span>$96</p>
+							</div>
+
+							<div class="flex-rz space-between mt-1em">
+								<p class="name arvo">QUESO PANELA</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">150 g</span>$51</p>
+							</div>
+
+							<div class="flex-rz space-between mt-1em">
+								<p class="name bebas fz-1--1">SINCRONIZADAS ARTAUD</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 piezas</span>$112</p>
+							</div>
+		<!--Mermeladas
+							<div class="bg-brown-light p15px relative mt-1em">
+								<p class="title-brown-1 text-center">LLÉVATE NUESTRAS</p>
+								<p class="title-brown-2 text-center">Mermeladas <br>de la casa</p>
+								<span class="center-center">
+									<img class="w-70px" src="https://pendulo.com/archivos/merl.png" alt="">
+									<p class="title-brown-3">$55</p>
+									<img class="w-70px" src="https://pendulo.com/archivos/merr.png" alt="">
+								</span>
+								<hr>
+								<p class="text-3 m0">JAIMAICA <span>145 g</span></p>
+								<p class="text-3 m0">GUAYABA <span>145 g</span></p>
+								<p class="text-3 m0">GUAYABA <span>145 g</span></p>
+								<p class="text-4 m0">REDUCIDA EN AZÚCAR</p>
+								<img class="absolute br-0" src="https://pendulo.com/archivos/mer.png" alt="">
+							</div>-->
+						</div>
+		<!--BRUNCH-->
+						<img class="w-70 my-2em" src="https://pendulo.com/archivos/brunch.png">
+						<div class="text-left p1 fz-1--5">
+							<p class="roboto-condensed brown-text text-center">Todos nuestros sándwiches se sirven en el pan de su elección: baguette de centeno negro, pan blanco, pan de anis, chapata multigrano o chapata de arándano. <span class="mustache-text">Acompañados de papas a la francesa o ensalada de jicama, pepino y zanahoria.</span></p>
+							<div class="flex-rz space-between mt-1em">
+								<p class="name arvo">CALIFORNIA</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">$180</p>
+							</div>
+							<div class="flex-rz space-between">
+								<p class="name oswald">medio sándwich</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">$120</p>
+							</div>
+
+							<div class="flex-rz space-between mt-1em">
+								<p class="name bebas fz-1--1">FREDO</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">$152</p>
+							</div>
+							<div class="flex-rz space-between">
+								<p class="name oswald">medio sándwich</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">$99</p>
+							</div>
+
+							<div class="flex-rz space-between mt-1em">
+								<p class="name arvo flex flex-start">MISTRAL DE TRES QUESOS<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">$139</p>
+							</div>
+							<div class="flex-rz space-between">
+								<p class="name oswald">medio sándwich</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">$92</p>
+							</div>
+
+							<div class="flex-rz space-between mt-1em">
+								<p class="name bebas fz-1--1">RUBENS DARÍO</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">$240</p>
+							</div>
+							<div class="flex-rz space-between">
+								<p class="name oswald">medio sándwich</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">$155</p>
+							</div>
+
+							<div class="flex-rz space-between mt-1em">
+								<p class="name arvo">TABLITA MEXICANA</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed">$142</p>
+							</div>
+
+							<div class="flex-rz space-between mt-1em">
+								<p class="name bebas fz-1--1">QUESADILLAS AL COMAL</p>
+								<span class="line-1"></span>
+								<p class="name roboto-condensed"><span class="mustache-text pr-5px">3 piezas</span>$96</p>
+							</div>
+		<!--PAN FRANCÉS-->
+							<div class="text-center">
+								<img class="w-150 my-2em" src="https://pendulo.com/archivos/hot-cakes2.png" alt="">
+								<div class="flex-rz space-between text-left">
+									<p class=" name oswald mustache-text pr-5px">4 piezas</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">+ $65</p>
+								</div>
+								<div class="flex-rz space-between text-left">
+									<p class="name oswald brown-light-text">con la fruta de su elección</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"><span class="mustache-text pr-5px">120 g</span>+ $23</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="comida">...</div>
+			<div class="tab-pane fade" id="bebidas" role="tabpanel" aria-labelledby="contact-tab">...</div>
+		</div>
+	</div>
+	<!--<div class="container-fluid p0">
+		<div class="my-2em flex center-center bgcolor-1">
+			<a class="not-under z-1" href="desayuno-bebidas.html"><p class="bttn">BEBIDAS</p></a>
+			<a class="not-under z-1" href=""><p class="bttn">POSTRES</p></a>
+		</div>
+	</div>-->
+	<div class="container-xxl">
+		
+		<div class="row my-2em">
+			<div class="col-md-12 text-center">
+				<span class="brown-text roboto-condensed fz-1--5 mx-10px">*Los gramos exhibidos son de la proteína en crudo.</span>
+				<span class="brown-text roboto-condensed fz-1--5 mx-10px">*La propina es opcional mas no obligatoria en este establecimiento.</span>
+				<span class="brown-text roboto-condensed fz-1--5 mx-10px">*Los precios mostrados ya incluyen IVA.</span>
+			</div>
+		</div>
+	</div>
+	<footer class="text-cente">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img class="logo2" src="https://pendulo.com/archivos/logo-white.png" alt="">
+					<ul class="social my-2em-auto">
+						<li class="facebook-f pr-15">
+							<a title="FACEBOOK" target="_blank" href="https://www.facebook.com/Cafebreria.el.Pendulo"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li class="twitter pr-15">
+							<a title="TWITTER" target="_blank" href="https://twitter.com/El_Pendulo"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li class="instagram pr-15">
+							<a title="INSTAGRAM" target="_blank" href="https://www.instagram.com/cafebreriaelpendulo/"><i class="fab fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 text-left">
+					<p class="text-1"  id="pl"><strong>PÁGINAS LEGALES</strong></p>
+					<a c id="al">Aviso legal</a>
+					<a c id="pd">Protección de datos</a>
+					<a c id="pc">Política de cookies</a>
+					<a c id="cc">Condiciones de compra</a>
+				</div>
+				<div class="col-md-3 text-left">
+					<p class="text-1" id="c"><strong>CONTACTO</strong></p>
+					<a>web@pendulo.com</a>
+					<a id="cs">Contáctanos</a>
+					<a id="bs">Bolsa de trabajo</a>
+					<a id="s">Sucursales</a>
+				</div>
+				<div class="col-md-3 text-left">
+					<p class="text-1" id="ac"><strong>ATENCIÓN AL CLIENTE</strong></p>
+					<a id="pf">Preguntas frecuentes</a>
+					<a id="f">Facturación</a>
+				</div>
+				<div class="col-md-12 mt-3em">
+					<p class="text-1 text-center">2022 © <strong>Cafebrería El Péndulo</strong>. <span id="d">Todos los Derechos Reservados</span></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+	    $('.carousel').carousel();
+});
+	   
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+	document.getElementById("mySidenav").style.width = "250px";
+	$('#bgfilter').addClass('show-1');
+};
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+	$('#bgfilter').removeClass('show-1');
+};
+</script>
+
+</body>
+</html>

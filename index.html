@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.1.0.js"  crossorigin="anonymous"></script>-->
+
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style.css">
+
+<!--FONTS-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<body class="bg-cap">
+
+	<div class="container-fluid relative">
+		<div class="header_language-buttons">
+			<button class="btn-lang" onclick="changeLang('es')">ESP</button><span class="white-text">/</span>
+			<button class="btn-lang" id="eng" onclick="changeLang('en')">ENG</button>
+		</div>
+		<a class="not-under absolute-center" href="https://pendulo.com/index.php"><h1 class="text-center m--5-0 white-text" id="t1">Restaurante</h1></a>
+<!--sucursales-->
+		<div class="row">
+			<div class="col-md-12 p0">
+				<div id="myCarousel1" class="carousel1 carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel1" data-slide-to="1"></li>
+						<li data-target="#myCarousel1" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="filter-black-2"></div>
+						<div class="item active h-400">
+							<img class="img-fluid h-100 obj-cover" src="https://pendulo.com/archivos/roma-4.png" alt="" style="width:100%;">
+						</div>
+
+						<div class="item h-400">
+							<img class="img-fluid h-100 obj-cover" src="https://pendulo.com/archivos/zona-1.png" alt="" style="width:100%;">
+						</div>
+
+						<div class="item h-400">
+							<img class="img-fluid h-100 obj-cover" src="img/condesa4.jpg" alt="" style="width:100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-xxl relative">
+		<div class="row block-rz">
+			<div class="col-md-4 h-400 p0 second_margin mt-15-rz">
+				<img style="height: 100%; width: 100%; object-fit:cover;" src="img/cafe.mp4" alt="Sirviendo una taza de café">
+			</div>
+			<div class="col-md-4 p0-rz row buttons_margin p0">
+				<div class="col-sm-12 col-md-12 col-lg-12 buttons_height buttons_padding_x">
+					<a class="not-under" id="eng-menu" href="menu.html"><p class=" mt-15 menu_button bg-1" id="Menu">Menú</p></a>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-6 buttons_height buttons_padding-left-1">
+					<a class="not-under" id="eng-bar" href="https://pendulo.com/especial/menu"><p class="menu_button bg-2" id="Bar">Menú del día</p></a>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-6 buttons_height buttons_padding-right-1">
+					<a class="not-under" href="https://pendulo.com/especial/terraza-del-foro"><p class="menu_button bg-3" id="inf">Menú infantil</p></a>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-6 buttons_height buttons_padding-left-2">
+					<a class="not-under" href="https://pendulo.com/especial/terraza-del-foro"><p class="menu_button bg-4" id="Bar">Bar</p></a>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-6 buttons_height buttons_padding-right-2" lang="en">
+					<a class="not-under" href="https://pendulo.com/especial/terraza-del-foro"><p class="menu_button bg-5 break-word" id="prom">Promociones</p></a>
+				</div>
+			</div>
+			<div class="col-md-4 p-0 second_margin">
+				<div id="myCarousel2" class="carousel2 carousel slide" data-ride="carousel">
+<!-- Especialidades -->
+					<div class="carousel-inner br-10">
+						<div class="item active">
+							<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/aperol.jpg" alt="" style="width:100%;">
+
+						</div>
+						<div class="item">
+							<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/huevos-cazuela.jpg" alt="" style="width:100%;">
+						</div>
+						<div class="item">
+							<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/jugos.jpg" alt="" style="width:100%;">
+						</div>
+						<div class="item">
+							<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/matcha-latte.jpg" alt="" style="width:100%;">
+						</div>
+						<div class="item">
+							<img class="img-fluid obj-cover h-400" src="img/pan.png" alt="" style="width:100%;">
+						</div>
+						<div class="item">
+							<img class="img-fluid obj-cover h-400" src="https://pendulo.com/archivos/pan.jpg" alt="" style="width:100%;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--promociones-->
+		<div class="row mb-1--5 mt-15-rz">
+			<div class="owl-carousel p0">
+				<div><img class="m-auto h-100 obj-contain br-10" src="https://mcusercontent.com/f4dc40364e07b41a7c51fd9c2/images/864c3299-a379-eb89-7baa-85694c797b65.jpg" alt=""></div>
+				<div><img class="m-auto h-100 obj-contain br-10" src="https://pendulo.com/archivos/rocola_web_pendulo.jpg" alt=""></div>
+				<div><img class="m-auto h-100 obj-contain br-10" src="https://mcusercontent.com/f4dc40364e07b41a7c51fd9c2/images/3c1d6cc7-d721-afc0-ad73-8ddf30c01f23.jpg" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<footer class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 p0">
+						<div class="row">
+							<div class="col-md-12 text-left-rz">
+								<img class="logo2" src="https://pendulo.com/archivos/logo-white.png" alt="">
+							</div>
+							<div class="col-md-12 text-left-rz">
+								<div class="social my-2em-auto">
+									<span class="facebook-f pr-15-rz">
+										<a title="FACEBOOK" target="_blank" href="https://www.facebook.com/Cafebreria.el.Pendulo"><i class="fab fa-facebook-f"></i></a>
+									</span>
+									<span class="twitter pr-15-rz">
+										<a title="TWITTER" target="_blank" href="https://twitter.com/El_Pendulo"><i class="fab fa-twitter"></i></a>
+									</span>
+									<span class="instagram pr-15-rz">
+										<a title="INSTAGRAM" target="_blank" href="https://www.instagram.com/cafebreriaelpendulo/"><i class="fab fa-instagram"></i></a>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 p0 text-left-rz">
+						<p class="text-1"  id="pl"><strong>LEGALES</strong></p>
+						<a c id="al">Aviso legal</a>
+						<a c id="pd">Protección de datos</a>
+						<a c id="pc">Política de cookies</a>
+						<a c id="cc">Condiciones de compra</a>
+					</div>
+					<div class="col-md-3 p0 text-left-rz">
+						<p class="text-1" id="c"><strong>CONTACTO</strong></p>
+						<a href="mailto:restaurante@pendulo.com?Subject=Hola%20Péndulo">restaurante@pendulo.com</a>
+						<a id="cs" target="blank" href="https://pendulo.com/contacto/">Contáctanos</a>
+						<a id="bs">Bolsa de trabajo</a>
+						<a id="s" target="blank" href="https://pendulo.com/especial/sucursales">Sucursales</a>
+					</div>
+					<div class="col-md-3 p0 text-left-rz">
+						<p class="text-1" id="ac"><strong>ATENCIÓN AL CLIENTE</strong></p>
+						<a id="pf" target="blank" href="https://pendulo.com/especial/preguntas">Preguntas frecuentes</a>
+						<a id="f" target="blank" href="https://pendulo.com/especial/facturacion">Facturación</a>
+					</div>
+					<div class="col-md-12 mt-3em">
+						<p class="text-1 text-center">2022 © <strong>Cafebrería El Péndulo</strong>. <span id="d">Todos los Derechos Reservados</span></p>
+					</div>
+				</div>
+			</div>
+			<button class="btn_floated"><img class="w-100" src="img/food.png"></button>
+			<a href="https://api.whatsapp.com/send?phone=50600000000" target="blank"><img class="btn_whats_app" src="img/whats.png"></a>
+			<a target="blank" href="https://pendulo.com/especial/comida-para-llevar/#contacto-sucursales" class="btn_phone relative"><img class="center-auto" src="img/llevar.png"></a>
+			<a target="blank" href="https://www.ubereats.com/mx/brand/cafebreria-el-pendulo" class="btn_uber relative"><img class="center-auto" src="img/uber.png"></a>
+		</footer>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+
+<script type="text/javascript" src="app.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</body>
+</html>
