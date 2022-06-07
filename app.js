@@ -133,10 +133,37 @@ $(document).ready(function(){
 
 $('.btn_floated').hover(function (e) {
 	e.preventDefault();
+  // $(".btn_floated_menu").animate({
+  //   height: "250px"
+  // }, 400)
 	$(".btn_whats_app").toggle(200)
 	$(".btn_phone").toggle(350)
 	$(".btn_uber").toggle(400)
 });
+
+$('.btn_floated_menu').hover(function (e) {
+	e.preventDefault();
+	$(".btn_whats_app").toggle(200)
+	$(".btn_phone").toggle(350)
+	$(".btn_uber").toggle(400)
+});
+
+
+// $(document).ready(function(){
+//   $('.fixed-action-btn').floatingActionButton();
+// });
+// $(document).ready(function(){
+//   $('.tooltipped').tooltip();
+// });
+//
+// $("#fab-btn").mouseover(function(){
+// setTimeout(function(){
+//     $('.tooltipped').tooltip('open');
+// },600);
+// });
+// $("#fab-btn").mouseout(function(){
+//     $('.tooltipped').tooltip('close');
+// })
 
 
 

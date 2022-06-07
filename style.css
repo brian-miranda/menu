@@ -707,8 +707,17 @@ body.bg-cap{
 	right: 20px;
 	z-index: 3;
 	box-shadow: 2px 2px 5px #572222;
-
 }
+.btn_floated_menu {
+    position: fixed;
+    bottom: 20px;
+  	right: 20px;
+    height: 250px;
+  	width: 50px;
+    background-color:none;
+    cursor: pointer;
+    z-index: 3;
+    }
 .btn_whats_app{
 	position: fixed;
 	bottom: 80px;
