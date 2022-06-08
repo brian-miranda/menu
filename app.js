@@ -51,9 +51,9 @@
 		}
   };
 
-	$( document ).ready(function() {
-	    $('.carousel1').carousel({interval:3000});
-	    $('.carousel2').carousel({interval:3500});
+$(document).ready(function() {
+    $('.carousel1').carousel({mouseDrag:true, interval:3000});
+    $('.carousel2').carousel({mouseDrag:true, interval:3500});
 });
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
@@ -80,6 +80,7 @@ $(document).ready(function(){
   		autoplay:true,
   		margin:15,
   		speed:4000,
+  		mouseDrag:true,
   		responsiveClass:true,
    		responsive:{
 	        0:{
@@ -103,6 +104,7 @@ $(document).ready(function(){
   		autoplay:true,
   		margin:25,
   		speed: 4000,
+  		mouseDrag:true,
   		responsiveClass:true,
    		responsive:{
 	        0:{
