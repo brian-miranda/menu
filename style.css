@@ -766,6 +766,10 @@ a.nav-link{
 .nav-link{background-color: #d1d1d1;color: #2e5f62;border-radius: 10px 10px 0 0;margin-right: 5px;}
 .nav>li>a:focus, .nav>li>a:hover,.nav-link.active,.nav-pills .nav-link.active, .nav-pills .show>.nav-link{background-color: #fff;color: #543b2a;}
 
+.nav>li {
+  width: 20%;
+}
+
 
 a.nav-link{font-size: 3em;}
 
