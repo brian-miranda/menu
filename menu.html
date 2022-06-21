@@ -4,16 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MENU</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-	<script type="text/javascript" src="app.js"></script>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -46,7 +36,7 @@
 			<div class="col-md-12">
 				<img class="logo-1" src="https://pendulo.com/archivos/logo-brown.png" alt="">
 				<div class="header_language-buttons-2">
-					<button class="btn-lang-2" onclick="changeLang('es')">ESP</button><span class="black-text">/</span>
+					<button class="btn-lang-2" onclick="changeLang('es')">ESP</button>
 					<button class="btn-lang-2" id="eng" onclick="changeLang('en')">ENG</button>
 				</div>
 				<span class="center-center">
@@ -76,536 +66,699 @@
 		</div>
 	</div>
 	<div class="container">
-		<ul class="nav justify-content-center" id="myTab">
+		<ul class="nav justify-content-center flex-wrap" id="myTab">
 			<li class="">
-				<a class="nav-link active" data-toggle="tab" href="#desayunos" role="tab" aria-controls="home" aria-selected="true">DESAYUNOS</a>
+				<a class="nav-link text-center active" data-toggle="tab" href="#desayunos" role="tab" aria-controls="home" aria-selected="true">DESAYUNOS</a>
 			</li>
 			<li class="">
-				<a class="nav-link" data-toggle="tab" href="#comida" role="tab" aria-controls="profile" aria-selected="false">COMIDAS</a>
+				<a class="nav-link text-center" data-toggle="tab" href="#comida" role="tab" aria-controls="profile" aria-selected="false">COMIDAS</a>
 			</li>
 			<li class="">
-				<a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">POSTRES</a>
+				<a class="nav-link text-center" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">POSTRES</a>
 			</li>
 			<li class="">
-				<a class="nav-link" data-toggle="tab" href="#bebidas" role="tab" aria-controls="contact" aria-selected="false">BEBIDAS</a>
+				<a class="nav-link text-center" data-toggle="tab" href="#bebidas" role="tab" aria-controls="contact" aria-selected="false">BEBIDAS</a>
 			</li>
 			<li class="">
-				<a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">BAR</a>
+				<a class="nav-link text-center" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">BAR</a>
 			</li>
 		</ul>
 		<div class="tab-content">
 			<!--DESAYUNO-->
 			<div class="tab-pane container active" id="desayunos">
+				<!--PARA EMPEZAR-->
+				<div class="row">
+					<div class="col-md-4 text-center"></div>
+					<div class="col-11 col-md-4 px-0 text-center">
+						<a class="collapse-button" data-toggle="collapse" href="#collapseEmpezar" aria-expanded="true">
+							<img class="w-70 my-2em" src="https://pendulo.com/archivos/empezar2x.png" alt="">
+						</a>
+					</div>
+					<div class="col-1 col-md-4 px-0 d-flex align-items-center justify-content-start text-center">
+						<a class="collapse-button" data-toggle="collapse" href="#collapseEmpezar" aria-expanded="true">
+							<i class="fa fa-chevron-down"></i>
+						</a>
+					</div>
+				</div>
+				<div class="collapse show" id="collapseEmpezar">
+					<div class="row" data-masonry='{"percentPosition": true }'>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<div class="flex-rz space-between">
+									<p class="name arvo">PLATO DE FRUTAS DE LA ESTACIÓN</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"><span class="mustache-text pr-5px">320g</span>$72</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-0">Fruta fresca del día a su elección.</p>
+								<p class="name oswald">chico <span class="brown-text roboto-condensed fw-900"><span class="mustache-text pr-5px">160g</span>$46</span></p>
+								<p class="name oswald">con queso cottage <span class="mustache-text pr-5px">90g</span>o yogurth<span class="mustache-text pr-5px">100g</span><span class="name roboto-condensed"> + $27</span></p>
+								<p class="name oswald">con granola <span class="mustache-text pr-5px">50g</span><span class="name roboto-condensed"> + $17</span></p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<div class="flex-rz space-between">
+									<p class="name arvo fz-1--1">SINCRONIZADAS ARTAUD</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 piezas</span>$112</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo fz-1--1">AÇAI BOWL</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">350g</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $125</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Pulpa de açai, frutos rojos y plátano molido, servido con coco rallado tostado, granola, fresa, mora azul, arándano, zarzamora, frambuesa, plátano y un toque de miel de abeja.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo flex">YOGURT ESPECIAL</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">370g</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $81</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Pulpa de açai, frutos rojos y plátano molido, servido con coco rallado tostado, granola, fresa, mora azul, arándano, zarzamora, frambuesa, plátano y un toque de miel de abeja.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo fz-1--1">BISQUETS CLÁSICOS</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">4 mitades</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $68</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-0">Hechos en casa, tostados con mantequilla y servidos con mermelada de fresa, guayaba o jamaica.</p>
+								<div class="flex-rz space-between mb-1--5">
+									<p class="name roboto-condensed"><span class="mustache-text">Media orden: 2 mitades</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">$42</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo flex">MOLLETES CASEROS</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">2 mitades</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $93</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">En pan casero con mantequilla, frijoles, queso gouda y aguacate. Se sirve con pico de gallo.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo fz-1--1">MOLLÁRABE</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">1 pieza</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $96</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Pan árabe relleno de frijoles refritos, queso Oaxaca fundido, mayones y aguacate. Se sirve con pico de gallo.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo flex">QUESO PANELA ASADO</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">150G</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $51</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Queso panela asado envuelto por un nopal también asado sobre un espejo de salsa pasilla, espolvoreado con queso fresco rallado, se acompaña de frijoles refritos y un abanico de aguacate fresco.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<!--JUGOS-->
 				<div class="row">
 					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center">
-						<img class="w-70 my-2em" src="https://pendulo.com/archivos/jugos2x.png" alt="">
+					<div class="col-11 col-md-4 px-0 text-center">
+						<a class="collapse-button" data-toggle="collapse" href="#collapseJugos" aria-expanded="true">
+							<img class="w-70 my-2em" src="https://pendulo.com/archivos/jugos2x.png" alt="">
+						</a>
 					</div>
-					<div class="col-md-4 text-center"></div>
+					<div class="col-1 col-md-4 px-0 d-flex align-items-center justify-content-start text-center">
+						<a class="collapse-button" data-toggle="collapse" href="#collapseJugos" aria-expanded="true">
+							<i class="fa fa-chevron-down"></i>
+						</a>
+					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-							<p class="name arvo">EL BRAM STOCKER</p>
-							<p class="roboto-condensed brown-text m0">Jitomate y apio preparado con salsa Maggi, salsa inglesa y un toque de limón.</p>
-							<div class="flex-rz space-between mb-1--5">
-								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $65</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-							<p class="bebas name fz-1--1">El FRESCO DE TAMAYO</p>
-							<p class="roboto-condensed brown-text m0">Sandía con naranja.</p>
-							<div class="flex-rz space-between mb-1--5">
-								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $65</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-							<p class="name arvo">EL COSTEÑO</p>
-							<p class="roboto-condensed brown-text m0">Papaya,naranja,fresa y plátano.</p>
-							<div class="flex-rz space-between mb-1--5">
-								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $50</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $66</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-							<p class="name bebas fz-1--1">El GAUGUIN TROPICAL</p>
-							<p class="roboto-condensed brown-text m0">Mango con naranja.</p>
-							<div class="flex-rz space-between mb-1--5">
-								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $50</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $66</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-							<p class="name arvo">EL GRAN PAPAYA</p>
-							<p class="roboto-condensed brown-text">Papaya,naranja y un toque de miel.</p>
-							<div class="flex-rz space-between mb-1--5">
-								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $65</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-							<p class="name bebas fz-1--1">El NARAHORIA</p>
-							<p class="roboto-condensed brown-text m0">Naranja y Zanahoria.</p>
-							<div class="flex-rz space-between mb-1--5">
-								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $59</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-							<p class="name arvo">JUGO ROJO REVITALIZANTE</p>
-							<div class="flex-rz space-between mb-1--5">
-								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $48</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $63</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-							<p class="name bebas fz-1--1">CLÁSICOS 100% NATURALES</p>
-							<p class="roboto-condensed brown-text m0">Naranja,toronja o zanahoria.</p>
-							<div class="flex-rz space-between mb-1--5">
-								<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span>$ 59</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-							<p class="name arvo flex flex-start">CLAMATO NATURAL <img class="ml-5px" src="https://pendulo.com/archivos/d1.png" alt=""></p>
-							<p class="roboto-condensed brown-text m0">Clásico y refrescante a base de concentrado e jugo de tomate, almeja y especias.</p>
-							<div class="flex-rz space-between mb-1--5">
-								<p class="name roboto-condensed"><span class="mustache-text">330 ml</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $48</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-							<!--Verde-->
-							<div class="bg-green-light p15px">
-								<p class="title-green">VERDE QUE TE <br> QUIERO VERDE</p>
-								<p class="name arvo">NOPAL DE LUX</p>
+				<div class="collapse show" id="collapseJugos">
+					<div class="row" data-masonry='{"percentPosition": true }'>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo">EL BRAM STOCKER</p>
+								<p class="roboto-condensed brown-text m0">Jitomate y apio preparado con salsa Maggi, salsa inglesa y un toque de limón.</p>
 								<div class="flex-rz space-between mb-1--5">
 									<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
 									<span class="line-1"></span>
-									<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $59</p>
+									<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $65</p>
 								</div>
-								<p class="name bebas fz-1--1">EL VERDE WHITMAN</p>
-								<div class="flex-rz space-between">
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="arvo name fz-1--1">El FRESCO DE TAMAYO</p>
+								<p class="roboto-condensed brown-text m0">Sandía con naranja.</p>
+								<div class="flex-rz space-between mb-1--5">
+									<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $65</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo">EL COSTEÑO</p>
+								<p class="roboto-condensed brown-text m0">Papaya,naranja,fresa y plátano.</p>
+								<div class="flex-rz space-between mb-1--5">
 									<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $50</p>
 									<span class="line-1"></span>
 									<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $66</p>
 								</div>
 							</div>
 						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<!--Verde-->
+								<div class="bg-green-light p15px">
+									<p class="title-green">VERDE QUE TE <br> QUIERO VERDE</p>
+									<p class="name arvo">NOPAL DE LUX</p>
+									<div class="flex-rz space-between mb-1--5">
+										<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $59</p>
+									</div>
+									<p class="name arvo fz-1--1">EL VERDE WHITMAN</p>
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $50</p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $66</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo fz-1--1">El GAUGUIN TROPICAL</p>
+								<p class="roboto-condensed brown-text m0">Mango con naranja.</p>
+								<div class="flex-rz space-between mb-1--5">
+									<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $50</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $66</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo">EL GRAN PAPAYA</p>
+								<p class="roboto-condensed brown-text">Papaya,naranja y un toque de miel.</p>
+								<div class="flex-rz space-between mb-1--5">
+									<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $65</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo fz-1--1">El NARAHORIA</p>
+								<p class="roboto-condensed brown-text m0">Naranja y Zanahoria.</p>
+								<div class="flex-rz space-between mb-1--5">
+									<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $59</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo">JUGO ROJO REVITALIZANTE</p>
+								<div class="flex-rz space-between mb-1--5">
+									<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $48</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span> $63</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo fz-1--1">CLÁSICOS 100% NATURALES</p>
+								<p class="roboto-condensed brown-text m0">Naranja,toronja o zanahoria.</p>
+								<div class="flex-rz space-between mb-1--5">
+									<p class="name roboto-condensed">CHICO <span class="mustache-text">300 ml</span> $49</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">GRANDE <span class="mustache-text">500 ml</span>$ 59</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo flex flex-start">CLAMATO NATURAL <img class="ml-5px" src="https://pendulo.com/archivos/d1.png" alt=""></p>
+								<p class="roboto-condensed brown-text m0">Clásico y refrescante a base de concentrado e jugo de tomate, almeja y especias.</p>
+								<div class="flex-rz space-between mb-1--5">
+									<p class="name roboto-condensed"><span class="mustache-text">330 ml</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $48</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--PAQUETES-->
+				<div class="row">
+					<div class="col-md-4 text-center"></div>
+					<div class="col-11 col-md-4 px-0 text-center">
+						<a class="collapse-button" data-toggle="collapse" href="#collapsePaquetesDesayuno" aria-expanded="true">
+							<img class="w-70 my-2em" src="https://pendulo.com/archivos/paquetes-des2x.png" alt="">
+						</a>
+					</div>
+					<div class="col-1 col-md-4 px-0 d-flex align-items-center justify-content-start text-center">
+						<a class="collapse-button" data-toggle="collapse" href="#collapsePaquetesDesayuno" aria-expanded="true">
+							<i class="fa fa-chevron-down"></i>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 text-center"></div>
+					<div class="col-md-4 text-center">
+						<div class="text-left p1 fz-1--5">
+							<p class="roboto-condensed brown-text text-center">Jugo chico (300 ml) de naranja, toronja, zanahoria o narahoria o plato de fruta chico (160 g) y café americano o americano descafeinado o té Twinings de manzanilla-miel-vainilla o hierbabuena.</p>
+						</div>
 					</div>
 					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-					<div class="col-md-4 text-center"></div>
-
-
-
-
-
-
-
-
-
-						<div class="text-left p1 fz-1--5"></div>
-						<div class="text-left p1 fz-1--5"></div>
-						<div class="text-left p1 fz-1--5"></div>
-						<div class="text-left p1 fz-1--5"></div>
-						<div class="text-left p1 fz-1--5"></div>
-						<div class="text-left p1 fz-1--5"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-							<!--HOT CAKES-->
-							<div class="text-center">
-								<img class="w-150 my-2em" src="https://pendulo.com/archivos/hot-cakes1.png" alt="">
-								<div class="flex-rz space-between text-left">
-									<p class="name bebas fz-1--1">CLÁSICOS</p>
-									<span class="line-1"></span>
-									<p class="name roboto-condensed"><span class="mustache-text pr-5px">3 piezas</span>$90</p>
+				</div>
+				<div class="collapse show" id="collapsePaquetesDesayuno">
+					<div class="row">
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapsePaquete1" role="button" aria-expanded="true" aria-controls="collapseExample" style="text-decoration: none;">
+										<p class="name arvo flex">HUEVOS EN CAZUELA</p>
+									</a>
+									<a class="collapse-button" data-toggle="collapse" href="#collapsePaquete1" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
 								</div>
-								<div class="flex-rz space-between text-left">
-									<p class="name oswald brown-light-text">con la fruta de su elección</p>
-									<span class="line-1"></span>
-									<p class="name roboto-condensed"><span class="mustache-text pr-5px">120 g</span>+ $23</p>
+								<div class="collapse" id="collapsePaquete1">
+									<img src="/img/fotos/Huevos-en-cazuela-de-barro.jpg" alt="" style="width: 100%;">
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed"> $153</p>
+									</div>
+									<p class="roboto-condensed brown-text mb-1--5">Huevos revueltos en aceite de oliva, con champiñones salteados, cebolla, queso panela y rajas ppoblanas. Acompañados de tortillas hechas a mano.</p>
 								</div>
-								<div class="flex-rz space-between text-left">
-									<p class="name oswald brown-light-text">con jamón<span class="mustache-text pr-5px"> 40 g</span> o con tocino<span class="mustache-text pr-5px"> 40 g</span></p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapsePaquete2" role="button" aria-expanded="true" aria-controls="collapseExample" style="text-decoration: none;">
+										<p class="name arvo fz-1--1">ENCHILADAS SUIZAS, VERDES O ROJAS</p>
+									</a>
+									<a class="collapse-button" data-toggle="collapse" href="#collapsePaquete2" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
+								</div>
+								<div class="collapse" id="collapsePaquete2">
+									<img src="/img/fotos/Enchiladas-suizas-verdes.jpg" alt="" style="width: 100%;">
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed"><span class="mustache-text">3 piezas</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed"> $186</p>
+									</div>
+									<p class="roboto-condensed brown-text mb-1--5">De pollo, queso panela o queso cottage, gratinadas con queso gouda. Acompañadas de frijoles de olla.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapsePaquete3" role="button" aria-expanded="true" aria-controls="collapseExample" style="text-decoration: none;">
+										<p class="name arvo flex">HUEVOS EN PASILLA KUMALA</p>
+									</a>
+									<a class="collapse-button" data-toggle="collapse" href="#collapsePaquete3" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
+								</div>
+								<div class="collapse" id="collapsePaquete3">
+									<img src="/img/fotos/Huevos-en-pasilla-Kumala.jpg" alt="" style="width: 100%;">
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed"> $159</p>
+									</div>
+									<p class="roboto-condensed brown-text mb-1--5">Revueltos, con queso panela, sobre una salsa casera de pasilla y salpicados de ajonjolí. Acompañados de frijoles refritos y tortillas hechas a mano.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapsePaquete4" role="button" aria-expanded="true" aria-controls="collapseExample" style="text-decoration: none;">
+										<p class="name arvo fz-1--1">OMELETTE JULIETTE</p>
+									</a>
+									<a class="collapse-button" data-toggle="collapse" href="#collapsePaquete4" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
+								</div>
+								<div class="collapse" id="collapsePaquete4">
+									<img src="/img/fotos/Omelette-Juliette-con-ensalada.jpg" alt="" style="width: 100%;">
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed"> $171</p>
+									</div>
+									<p class="roboto-condensed brown-text mb-1--5">De espinaca y queso de cabra, bañado con salsa roja, montado sobre un espejo de salsa poblana y lluvia de totopos. Acompañado de ensalada con lechuga italiana, zanahoria, pepino y jicama, o frijoles refritos, o papas a la francesa.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapsePaquete5" role="button" aria-expanded="true" aria-controls="collapseExample" style="text-decoration: none;">
+										<p class="name arvo flex">HUEVOS LEÑERO</p>
+									</a>
+									<a class="collapse-button" data-toggle="collapse" href="#collapsePaquete5" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
+								</div>
+								<div class="collapse" id="collapsePaquete5">
+									<img src="/img/fotos/Huevos-Lenero.jpg" alt="" style="width: 100%;">
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed"> $169</p>
+									</div>
+									<p class="roboto-condensed brown-text mb-1--5">Huevos fritos, montados sobre un sope con frijoles refritos y queso de cabra, bañados con adobo a los tres chiles y ajonjoli. Acompañados de jitomate fresco.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapsePaquete6" role="button" aria-expanded="true" aria-controls="collapseExample" style="text-decoration: none;">
+										<p class="name arvo fz-1--1">CHILAQUILES CON ARRACHERA</p>
+									</a>
+									<a class="collapse-button" data-toggle="collapse" href="#collapsePaquete6" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
+								</div>
+								<div class="collapse" id="collapsePaquete6">
+									<img src="/img/fotos/Chilaquiles-crujientes-rojos-con-arrachera.jpg" alt="" style="width: 100%;">
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed"><span class="mustache-text">200 g</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed"> $268</p>
+									</div>
+									<p class="roboto-condensed brown-text mb-1--5">Verdes o rojos, con crema, queso, cebolla y arrachera asada.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--CLASICOS-->
+				<div class="row">
+					<div class="col-md-4 text-center"></div>
+					<div class="col-11 col-md-4 px-0 text-center">
+						<a class="collapse-button" data-toggle="collapse" href="#collapseClasico" aria-expanded="true">
+							<img class="w-70 my-2em" src="https://pendulo.com/archivos/clasico.png" alt="">
+						</a>
+					</div>
+					<div class="col-1 col-md-4 px-0  d-flex align-items-center justify-content-start text-center">
+						<a class="collapse-button" data-toggle="collapse" href="#collapseClasico" aria-expanded="true">
+							<i class="fa fa-chevron-down"></i>
+						</a>
+					</div>
+				</div>
+				<div class="collapse show" id="collapseClasico">
+					<div class="row" '>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo flex">HUEVOS AL GUSTO</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $109</p>
+								</div>
+								<p class="roboto-condensed brown-text"> <span class="name oswald m0 brown-light-text">NATURALES</span> Revueltos, fritos o tibios. Acompañados de frijoles y jitomate fresco.</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">Con jamón York o tocino</span></p>
 									<span class="line-1"></span>
 									<p class="name roboto-condensed">+ $23</p>
 								</div>
+								<p class="roboto-condensed brown-text"> <span class="name oswald m0 brown-light-text">DEL RANCHO</span> Fritos sobre una tortilla hecha a mano, bañados con salsa ranchera guisada.</p>
+								<p class="roboto-condensed brown-text mb-1--5"> <span class="name oswald m0 brown-light-text">NATURALES</span> Revueltos con jitomate, cebolla y chile serrano, acompañados de frijoles y tortillas hechas a mano.</p>
 							</div>
-
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo fz-1--1">OMELETTE DEL PÉNDULO</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $108</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">De queso gouda, de espinaca, de champiñón o mixto, acompañado de ensalada con lechuga italiana, zanahotia , pepino y jicama, o frijoles refritos, o papas a la francesa.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo flex">HUEVOS EN CAZUELA</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $104</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Huevos revueltos en aceite de oliva, con chamiñones salteados, cebolla, queso panela y rajas poblanas. Acompañados de tortillas hechas a mano.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo fz-1--1">HUEVOS PÉNDULO</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $116</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Rancheros gratinados sobre una tortilla hecha a mano, con tiras de aguacate.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo flex">HUEVOS ANÄIS</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">1 pieza</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $137</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo fz-1--1">HUEVOS PAZ</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $110</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Fritos sobre un sope hecho a mano con frijoles y gratinados con queso Oaxaca, bañados con salsa verde guisada y un toque de crema. Acompañados de jitomate fresco.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo flex">HUEVOS EN PASILLA KUMALA</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">2 piezaS</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $110</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Revueltos, con queso panela, sobre una salsa casera de pasilla y salpicados de ajonjolí. Acompañados de frijoles refritos y tortillas hechas a mano.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo fz-1--1">HUEVO MACONDO</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">1 pieza1</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $109</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo flex">OMELETTE JULIETTE</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $122</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">De espinaca y queso de cabra, bañado con salsa roja, montado sobre un espejo de salsa poblana y lluvia de totopos. Acompañado de ensalada con lechuga italiana, zanahoria, pepino y jicama, o frijoles refritos, o papas a la francesa.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo fz-1--1">HUEVOS LEÑERO</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $120</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Huevos fritos, montados sobre un sope con frijoles refritos y queso de cabra, bañados con adobo a los tres chiles y ajonjoli. Acompañados de jitomate fresco.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<p class="name arvo flex">MACHACA MONTES</p>
+								<div class="flex-rz space-between">
+									<p class="name roboto-condensed"><span class="mustache-text">375 g</span></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"> $144</p>
+								</div>
+								<p class="roboto-condensed brown-text mb-1--5">Deliciosa machaca regiomontana con huevo, jitomate, cebolla y chile serrano. Con guarnición de tortillas de harina y frijoles refritos.</p>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5"></div>
+						</div>
 					</div>
-					<!--PAQUETES-->
+				</div>
+
+				<!--BRUNCH-->
+				<div class="row">
+					<div class="col-md-2 text-center"></div>
 					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-
-
-
-
-
-
-							<p class="name arvo flex">HUEVOS EN CAZUELA</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $153</p>
+						<div class="row">
+							<div class="col-11">
+								<a class="collapse-button" data-toggle="collapse" href="#collapseBrunch" aria-expanded="true">
+									<img class="w-70 my-2em" src="https://pendulo.com/archivos/brunch.png">
+								</a>
 							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Huevos revueltos en aceite de oliva, con champpiñones salteados, cebolla, queso panela y rajas ppoblanas. Acompañados de tortillas hechas a mano.</p>
-
-							<p class="name bebas fz-1--1">ENCHILADAS SUIZAS, VERDES O ROJAS</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">3 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $186</p>
+							<div class="col-1 col-md-4 px-0  d-flex align-items-center justify-content-start text-center">
+								<a class="collapse-button" data-toggle="collapse" href="#collapseBrunch" aria-expanded="true">
+									<i class="fa fa-chevron-down"></i>
+								</a>
 							</div>
-							<p class="roboto-condensed brown-text mb-1--5">De pollo, queso panela o queso cottage, gratinadas con queso gouda. Acompañadas de frijoles de olla.</p>
-
-							<p class="name arvo flex">HUEVOS EN PASILLA KUMALA</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $159</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Revueltos, con queso panela, sobre una salsa casera de pasilla y salpicados de ajonjolí. Acompañados de frijoles refritos y tortillas hechas a mano.</p>
-
-							<p class="name bebas fz-1--1">OMELETTE JULIETTE</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $171</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">De espinaca y queso de cabra, bañado con salsa roja, montado sobre un espejo de salsa poblana y lluvia de totopos. Acompañado de ensalada con lechuga italiana, zanahoria, pepino y jicama, o frijoles refritos, o papas a la francesa.</p>
-
-							<p class="name arvo flex">HUEVOS LEÑERO</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $169</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Huevos fritos, montados sobre un sope con frijoles refritos y queso de cabra, bañados con adobo a los tres chiles y ajonjoli. Acompañados de jitomate fresco.</p>
-
-							<p class="name bebas fz-1--1">CHILAQUILES CON ARRACHERA<</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">200 g</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $268</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Verdes o rojos, con crema, queso, cebolla y arrachera asada.</p>
-						</div>
-						<img class="w-80 my-2em" src="https://pendulo.com/archivos/chil.png" alt="">
-						<div class="text-left p1 fz-1--5">
-							<div class="flex-rz space-between">
-								<p class="name bebas fz-1--1">CHILAQUILES CRUJIENTES</p>
-								<span class="line-1"></span>
-								<p class="brown-text roboto-condensed fw-900 m0 nowrap"><span class="mustache-text pr-5px">600 g</span>$118</p>
-							</div>
-							<p class="name oswald brown-light-text">Verdes o Rojos</p>
 						</div>
 
-						<!--LO CLÁSICO-->
-						<img class="w-70 my-2em" src="https://pendulo.com/archivos/clasico.png" alt="">
-						<div class="text-left p1 fz-1--5">
+						<div class="collapse show" id="collapseBrunch">
+							<div class="text-left p1 fz-1--5">
+								<p class="roboto-condensed brown-text text-center">Todos nuestros sándwiches se sirven en el pan de su elección: baguette de centeno negro, pan blanco, pan de anis, chapata multigrano o chapata de arándano. <span class="mustache-text">Acompañados de papas a la francesa o ensalada de jicama, pepino y zanahoria.</span></p>
+								<div class="flex-rz space-between mt-1em">
+									<p class="name arvo">CALIFORNIA</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">$180</p>
+								</div>
+								<div class="flex-rz space-between">
+									<p class="name oswald">medio sándwich</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">$120</p>
+								</div>
 
-							<p class="name arvo flex">HUEVOS AL GUSTO</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $109</p>
-							</div>
-							<p class="roboto-condensed brown-text"> <span class="name oswald m0 brown-light-text">NATURALES</span> Revueltos, fritos o tibios. Acompañados de frijoles y jitomate fresco.</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">Con jamón York o tocino</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">+ $23</p>
-							</div>
-							<p class="roboto-condensed brown-text"> <span class="name oswald m0 brown-light-text">DEL RANCHO</span> Fritos sobre una tortilla hecha a mano, bañados con salsa ranchera guisada.</p>
-							<p class="roboto-condensed brown-text mb-1--5"> <span class="name oswald m0 brown-light-text">NATURALES</span> Revueltos con jitomate, cebolla y chile serrano, acompañados de frijoles y tortillas hechas a mano.</p>
+								<div class="flex-rz space-between mt-1em">
+									<p class="name arvo fz-1--1">FREDO</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">$152</p>
+								</div>
+								<div class="flex-rz space-between">
+									<p class="name oswald">medio sándwich</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">$99</p>
+								</div>
 
-							<p class="name bebas fz-1--1">OMELETTE DEL PÉNDULO</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $108</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">De queso gouda, de espinaca, de champiñón o mixto, acompañado de ensalada con lechuga italiana, zanahotia , pepino y jicama, o frijoles refritos, o papas a la francesa.</p>
+								<div class="flex-rz space-between mt-1em">
+									<p class="name arvo flex flex-start">MISTRAL DE TRES QUESOS<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">$139</p>
+								</div>
+								<div class="flex-rz space-between">
+									<p class="name oswald">medio sándwich</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">$92</p>
+								</div>
 
-							<p class="name arvo flex">HUEVOS EN CAZUELA</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $104</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Huevos revueltos en aceite de oliva, con chamiñones salteados, cebolla, queso panela y rajas poblanas. Acompañados de tortillas hechas a mano.</p>
+								<div class="flex-rz space-between mt-1em">
+									<p class="name arvo fz-1--1">RUBENS DARÍO</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">$240</p>
+								</div>
+								<div class="flex-rz space-between">
+									<p class="name oswald">medio sándwich</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">$155</p>
+								</div>
 
-							<p class="name bebas fz-1--1">HUEVOS PÉNDULO</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $116</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Rancheros gratinados sobre una tortilla hecha a mano, con tiras de aguacate.</p>
+								<div class="flex-rz space-between mt-1em">
+									<p class="name arvo">TABLITA MEXICANA</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">$142</p>
+								</div>
 
-							<p class="name arvo flex">HUEVOS ANÄIS</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">1 pieza</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $137</p>
+								<div class="flex-rz space-between mt-1em">
+									<p class="name arvo fz-1--1">QUESADILLAS AL COMAL</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"><span class="mustache-text pr-5px">3 piezas</span>$96</p>
+								</div>
 							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-							<p class="name bebas fz-1--1">HUEVOS PAZ</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $110</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Fritos sobre un sope hecho a mano con frijoles y gratinados con queso Oaxaca, bañados con salsa verde guisada y un toque de crema. Acompañados de jitomate fresco.</p>
-
-							<p class="name arvo flex">HUEVOS EN PASILLA KUMALA</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezaS</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $110</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Revueltos, con queso panela, sobre una salsa casera de pasilla y salpicados de ajonjolí. Acompañados de frijoles refritos y tortillas hechas a mano.</p>
-
-							<p class="name bebas fz-1--1">HUEVO MACONDO<</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">1 pieza1</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $109</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-							<p class="name arvo flex">OMELETTE JULIETTE</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $122</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">De espinaca y queso de cabra, bañado con salsa roja, montado sobre un espejo de salsa poblana y lluvia de totopos. Acompañado de ensalada con lechuga italiana, zanahoria, pepino y jicama, o frijoles refritos, o papas a la francesa.</p>
-
-							<p class="name bebas fz-1--1">HUEVOS LEÑERO</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $120</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Huevos fritos, montados sobre un sope con frijoles refritos y queso de cabra, bañados con adobo a los tres chiles y ajonjoli. Acompañados de jitomate fresco.</p>
-
-							<p class="name arvo flex">MACHACA MONTES</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">375 g</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $144</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Deliciosa machaca regiomontana con huevo, jitomate, cebolla y chile serrano. Con guarnición de tortillas de harina y frijoles refritos.</p>
-
 						</div>
-						<img class="w-70 my-2em" src="https://pendulo.com/archivos/pan-dulce.png">
 					</div>
+
+
+					<!--CHILAQUILES, HOT CAKES, PAN FRANCES-->
 					<div class="col-md-4 text-center">
-						<div class="text-left p1 fz-1--5">
-
-
-
-
-
-
-
-							<div class="flex-rz space-between mt-1em">
-								<p class="name bebas fz-1--1">SINCRONIZADAS ARTAUD</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"><span class="mustache-text pr-5px">2 piezas</span>$112</p>
+						<div class="row">
+							<div class="col-11">
+								<a class="collapse-button" data-toggle="collapse" href="#collapseChilaquiles" aria-expanded="true">
+									<img class="w-80 my-2em" src="https://pendulo.com/archivos/chil.png" alt="">
+								</a>
 							</div>
-
-							<p class="name bebas fz-1--1">AÇAI BOWL</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">350g</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $125</p>
+							<div class="col-1 col-md-4 px-0  d-flex align-items-center justify-content-start text-center">
+								<a class="collapse-button" data-toggle="collapse" href="#collapseChilaquiles" aria-expanded="true">
+									<i class="fa fa-chevron-down"></i>
+								</a>
 							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Pulpa de açai, frutos rojos y plátano molido, servido con coco rallado tostado, granola, fresa, mora azul, arándano, zarzamora, frambuesa, plátano y un toque de miel de abeja.</p>
-
-							<p class="name arvo flex">YOGURT ESPECIAL</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">370g</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $81</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Pulpa de açai, frutos rojos y plátano molido, servido con coco rallado tostado, granola, fresa, mora azul, arándano, zarzamora, frambuesa, plátano y un toque de miel de abeja.</p>
-
-							<p class="name bebas fz-1--1">BISQUETS CLÁSICOS</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">4 mitades</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $68</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-0">Hechos en casa, tostados con mantequilla y servidos con mermelada de fresa, guayaba o jamaica.</p>
-							<div class="flex-rz space-between mb-1--5">
-								<p class="name roboto-condensed"><span class="mustache-text">Media orden: 2 mitades</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">$42</p>
-							</div>
-
-							<p class="name arvo flex">MOLLETES CASEROS</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">2 mitades</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $93</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">En pan casero con mantequilla, frijoles, queso gouda y aguacate. Se sirve con pico de gallo.</p>
-
-							<p class="name bebas fz-1--1">MOLLÁRABE</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">1 pieza</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $96</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Pan árabe relleno de frijoles refritos, queso Oaxaca fundido, mayones y aguacate. Se sirve con pico de gallo.</p>
-
-							<p class="name arvo flex">QUESO PANELA ASADO</p>
-							<div class="flex-rz space-between">
-								<p class="name roboto-condensed"><span class="mustache-text">150G</span></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"> $51</p>
-							</div>
-							<p class="roboto-condensed brown-text mb-1--5">Queso panela asado envuelto por un nopal también asado sobre un espejo de salsa pasilla, espolvoreado con queso fresco rallado, se acompaña de frijoles refritos y un abanico de aguacate fresco.</p>
-							<!--Mermeladas
-							<div class="bg-brown-light p15px relative mt-1em">
-								<p class="title-brown-1 text-center">LLÉVATE NUESTRAS</p>
-								<p class="title-brown-2 text-center">Mermeladas <br>de la casa</p>
-								<span class="center-center">
-									<img class="w-70px" src="https://pendulo.com/archivos/merl.png" alt="">
-									<p class="title-brown-3">$55</p>
-									<img class="w-70px" src="https://pendulo.com/archivos/merr.png" alt="">
-								</span>
-								<hr>
-								<p class="text-3 m0">JAIMAICA <span>145 g</span></p>
-								<p class="text-3 m0">GUAYABA <span>145 g</span></p>
-								<p class="text-3 m0">GUAYABA <span>145 g</span></p>
-								<p class="text-4 m0">REDUCIDA EN AZÚCAR</p>
-								<img class="absolute br-0" src="https://pendulo.com/archivos/mer.png" alt="">
-							</div>-->
 						</div>
-						<!--BRUNCH-->
-						<img class="w-70 my-2em" src="https://pendulo.com/archivos/brunch.png">
-						<div class="text-left p1 fz-1--5">
-							<p class="roboto-condensed brown-text text-center">Todos nuestros sándwiches se sirven en el pan de su elección: baguette de centeno negro, pan blanco, pan de anis, chapata multigrano o chapata de arándano. <span class="mustache-text">Acompañados de papas a la francesa o ensalada de jicama, pepino y zanahoria.</span></p>
-							<div class="flex-rz space-between mt-1em">
-								<p class="name arvo">CALIFORNIA</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">$180</p>
+						<div class="collapse show" id="collapseChilaquiles">
+							<div class="text-left p1 fz-1--5">
+								<div class="flex-rz space-between">
+									<p class="name arvo fz-1--1">CHILAQUILES CRUJIENTES</p>
+									<span class="line-1"></span>
+									<p class="brown-text roboto-condensed fw-900 m0 nowrap"><span class="mustache-text pr-5px">600 g</span>$118</p>
+								</div>
+								<p class="name oswald brown-light-text">Verdes o Rojos</p>
 							</div>
-							<div class="flex-rz space-between">
-								<p class="name oswald">medio sándwich</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">$120</p>
-							</div>
+						</div>
 
-							<div class="flex-rz space-between mt-1em">
-								<p class="name bebas fz-1--1">FREDO</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">$152</p>
-							</div>
-							<div class="flex-rz space-between">
-								<p class="name oswald">medio sándwich</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">$99</p>
-							</div>
-
-							<div class="flex-rz space-between mt-1em">
-								<p class="name arvo flex flex-start">MISTRAL DE TRES QUESOS<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">$139</p>
-							</div>
-							<div class="flex-rz space-between">
-								<p class="name oswald">medio sándwich</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">$92</p>
-							</div>
-
-							<div class="flex-rz space-between mt-1em">
-								<p class="name bebas fz-1--1">RUBENS DARÍO</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">$240</p>
-							</div>
-							<div class="flex-rz space-between">
-								<p class="name oswald">medio sándwich</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">$155</p>
-							</div>
-
-							<div class="flex-rz space-between mt-1em">
-								<p class="name arvo">TABLITA MEXICANA</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed">$142</p>
-							</div>
-
-							<div class="flex-rz space-between mt-1em">
-								<p class="name bebas fz-1--1">QUESADILLAS AL COMAL</p>
-								<span class="line-1"></span>
-								<p class="name roboto-condensed"><span class="mustache-text pr-5px">3 piezas</span>$96</p>
-							</div>
-							<!--PAN FRANCÉS-->
-							<div class="text-center">
-								<img class="w-150 my-2em" src="https://pendulo.com/archivos/hot-cakes2.png" alt="">
+						<div class="d-flex justify-content-around align-items-center">
+							<a class="collapse-button pl-5" data-toggle="collapse" href="#collapseHotCakes" aria-expanded="true">
+								<img class="w-80 my-2em" src="https://pendulo.com/archivos/hot-cakes1.png" alt="">
+							</a>
+							<a class="collapse-button" data-toggle="collapse" href="#collapseHotCakes" aria-expanded="true">
+								<i class="fa fa-chevron-down"></i>
+							</a>
+						</div>
+						<div class="collapse show" id="collapseHotCakes">
+							<div class="text-left p1 fz-1--5">
+								<div class="flex-rz space-between text-left">
+									<p class="name arvo fz-1--1">CLÁSICOS</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"><span class="mustache-text pr-5px">3 piezas</span>$90</p>
+								</div>
 								<div class="flex-rz space-between text-left">
 									<p class=" name oswald mustache-text pr-5px">4 piezas</p>
 									<span class="line-1"></span>
@@ -618,9 +771,35 @@
 								</div>
 							</div>
 						</div>
+
+						<div class="d-flex justify-content-around align-items-center">
+							<a class="collapse-button pl-5" data-toggle="collapse" href="#collapsePanFrances" aria-expanded="true">
+								<img class="w-80 my-2em" src="https://pendulo.com/archivos/hot-cakes2.png" alt="">
+							</a>
+							<a class="collapse-button" data-toggle="collapse" href="#collapsePanFrances" aria-expanded="true">
+								<i class="fa fa-chevron-down"></i>
+							</a>
+						</div>
+						<div class="collapse show" id="collapsePanFrances">
+							<div class="text-left p1 fz-1--5">
+								<div class="flex-rz space-between text-left">
+									<p class=" name oswald mustache-text pr-5px">4 piezas</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed">+ $65</p>
+								</div>
+								<div class="flex-rz space-between text-left">
+									<p class="name oswald brown-light-text">con la fruta de su elección</p>
+									<span class="line-1"></span>
+									<p class="name roboto-condensed"><span class="mustache-text pr-5px">120 g</span>+ $23</p>
+								</div>
+							</div>
+						</div>
+						<img class="w-70 my-2em" src="https://pendulo.com/archivos/pan-dulce.png">
 					</div>
+					<div class="col-md-2 text-center"></div>
 				</div>
 			</div>
+
 			<!--COMIDA-->
 			<div class="tab-pane container" id="comida">
 				<div class="row p2-1 d-none d-md-block">
@@ -637,7 +816,7 @@
 								</div>
 								<p class="roboto-condensed brown-text mb-1--5">Rebanadas de queso de cabra empanizadas y doradas al punto. Acompañadas de aguacate, sobre una cama de espinacas, bañadas con vinagreta de ajonjoli y salpicadas con ajonjoli tostado.</p>
 
-								<p class="name bebas fz-1--1">EMPANADITAS CASERAS</p>
+								<p class="name arvo fz-1--1">EMPANADITAS CASERAS</p>
 								<div class="flex-rz space-between">
 									<p class="name roboto-condensed"><span class="mustache-text">6 piezas</span></p>
 									<span class="line-1"></span>
@@ -654,7 +833,7 @@
 								<p class="roboto-condensed brown-text mb-1--5">Dedos de queso gouda empanizados, sobre un espejo de su elección de salsa verde al cilantro, salsa de tamarindo o mixtos. cAcompañados de papa paja al centro.</p>
 
 								<div class=" marker_1">
-									<p class="name bebas flex items-center fz-1--1"><img class="w-50px mr-1" src="https://pendulo.com/archivos/compartir.png" alt=""> TABLITA MEXICANA </p>
+									<p class="name arvo flex items-center fz-1--1"><img class="w-50px mr-1" src="https://pendulo.com/archivos/compartir.png" alt=""> TABLITA MEXICANA </p>
 									<div class="flex-rz space-between">
 										<p class="name roboto-condensed"><span class="mustache-text">6 piezas</span></p>
 										<span class="line-1"></span>
@@ -666,7 +845,7 @@
 							<img class="w-70 my-2em" src="https://pendulo.com/archivos/caldos_y_sopas.png" alt="">
 							<div class="text-left p1 fz-1--5">
 								<!--CALDOS Y SOPAS-->
-								<p class="bebas name fz-1--1">Sopa de tortilla en caldo de frijol</p>
+								<p class="arvo name fz-1--1">Sopa de tortilla en caldo de frijol</p>
 								<p class="roboto-condensed brown-text m0">Sazonada con epazote. Acompañada de queso panela, crema, chicharrón, aguacate, cebolla y chile chipotle al gusto.</p>
 								<div class="flex-rz space-between mb-1--5">
 									<p class="name roboto-condensed">PLATO <span class="mustache-text">500 ml</span> $92</p>
@@ -682,7 +861,7 @@
 									<p class="name roboto-condensed">TAZÓN <span class="mustache-text">355 ml</span> $72</p>
 								</div>
 
-								<p class="name bebas fz-1--1">CALDITO DE POLLO DE LA ABUELA</p>
+								<p class="name arvo fz-1--1">CALDITO DE POLLO DE LA ABUELA</p>
 								<p class="roboto-condensed brown-text m0">Caldo sazonado con pollo y arroz. Acompañado de queso panela, cilantro, cebolla, chicharrón, limón, aguacate y chile serrano al gusto.</p>
 								<div class="flex-rz space-between mb-1--5">
 									<p class="name roboto-condensed">PLATO <span class="mustache-text">500 ml</span> $99</p>
@@ -699,7 +878,7 @@
 								</div>
 
 								<div class="flex-rz space-between">
-									<p class="name bebas fz-1--1">FIDEO SECO DA VINCI</p>
+									<p class="name arvo fz-1--1">FIDEO SECO DA VINCI</p>
 									<span class="line-1"></span>
 									<p class="name roboto-condensed">$116</p>
 								</div>
@@ -720,7 +899,7 @@
 							<!--ENSALADAS-->
 							<img class="w-70 my-2em" src="https://pendulo.com/archivos/ensaladas.png" alt="">
 							<div class="text-left p1 fz-1--5">
-								<p class="name-wrap bebas fz-1--1 flex-start">ENSALADA DE ESPINACA PERA Y PALMITO<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
+								<p class="name-wrap arvo fz-1--1 flex-start">ENSALADA DE ESPINACA PERA Y PALMITO<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
 								<p class="roboto-condensed brown-text m0">Espinaca fresca, pera, fresa, queso de cabra, palmito,  suprema de toronja, nuez y aderezo de jamaica.</p>
 								<div class="flex-rz space-between mb-1--5">
 									<p class="name roboto-condensed">COMPLETA <span class="mustache-text">600g</span> $190</p>
@@ -736,7 +915,7 @@
 									<p class="name roboto-condensed">MEDIA <span class="mustache-text">220g</span> $101</p>
 								</div>
 
-								<p class="name bebas fz-1--1 flex-start">LA GRIEGA DE LOS ASOMBROS<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
+								<p class="name arvo fz-1--1 flex-start">LA GRIEGA DE LOS ASOMBROS<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
 								<p class="roboto-condensed brown-text m0">De dos tipos de lechuga, pepino, jitomate, cebolla, pimiento rojo, aceituna negra y queso feta, se adereza con vinagreta de limón.</p>
 								<div class="flex-rz space-between mb-1--5">
 									<p class="name roboto-condensed">COMPLETA <span class="mustache-text">380g</span> $183</p>
@@ -754,7 +933,7 @@
 							</div>
 			 				<img class="w-70 my-2em" src="https://pendulo.com/archivos/pasta.png" alt="">
 							<div class="text-left p1 fz-1--5">
-								<p class="name bebas fz-1--1 flex-start">LASSAGNA FO<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
+								<p class="name arvo fz-1--1 flex-start">LASSAGNA FO<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
 								<div class="flex-rz space-between">
 									<p class="name roboto-condensed"><span class="mustache-text">400g</span></p>
 									<span class="line-1"></span>
@@ -771,7 +950,7 @@
 								<p class="m0 orange-text dancing">Spaguetti, fetuccini o fusilli</p>
 								<p class="roboto-condensed brown-text mb-1--5">En su elección de salsa pomodoro, primavera, a las rajas, al burro o salsa dos quesos.</p>
 
-								<p class="name bebas fz-1--1 flex-start">RAVIOLES CARROLL<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
+								<p class="name arvo fz-1--1 flex-start">RAVIOLES CARROLL<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
 								<div class="flex-rz space-between">
 									<p class="name roboto-condensed"><span class="mustache-text">8 piezas</span></p>
 									<span class="line-1"></span>
@@ -787,7 +966,7 @@
 								</div>
 								<p class="roboto-condensed brown-text mb-1--5">Espirales de calabaza y zanahoria, salteadas en una salsa de tomate  con alcaparras, champiñones y aceitunas negras, acompañado de queso parmesano.</p>
 
-								<p class="name bebas fz-1--1 flex-start">CANELONES MARÍA<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""><img class="ml-5px" src="https://pendulo.com/archivos/d4.png" alt=""></p>
+								<p class="name arvo fz-1--1 flex-start">CANELONES MARÍA<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""><img class="ml-5px" src="https://pendulo.com/archivos/d4.png" alt=""></p>
 								<div class="flex-rz space-between">
 									<p class="name roboto-condensed"><span class="mustache-text">3 piezas</span></p>
 									<span class="line-1"></span>
@@ -810,7 +989,7 @@
 								</div>
 								<p class="roboto-condensed brown-text mb-1--5">Nachos de chili con carne, crema ácida, lechuga y guacamole.</p>
 
-								<p class="name bebas fz-1--1">GUACAMOLE CON TOTOPOS</p>
+								<p class="name arvo fz-1--1">GUACAMOLE CON TOTOPOS</p>
 								<div class="flex-rz space-between">
 									<p class="name roboto-condensed"><span class="mustache-text">250g</span></p>
 									<span class="line-1"></span>
@@ -829,7 +1008,7 @@
 						</div>
 						<div class="col-md-6 ">
 							<div class="text-left p1 fz-1--5">
-								<p class="name bebas fz-1--1">PAPAS PÉNDULO</p>
+								<p class="name arvo fz-1--1">PAPAS PÉNDULO</p>
 								<div class="flex-rz space-between">
 									<p class="name roboto-condensed"><span class="mustache-text">300g</span></p>
 									<span class="line-1"></span>
@@ -887,12 +1066,12 @@
 								<tr>
 									<td>
 										<ul class="bullet">
-											<li><p class="name bebas fz-1--1">MINESTRA DE VERDURA ECO</p></li>
+											<li><p class="name arvo fz-1--1">MINESTRA DE VERDURA ECO</p></li>
 										</ul>
 									</td>
 									<td>
 										<ul class="bullet">
-											<li><p class="name bebas fz-1--1">FREDO</p></li>
+											<li><p class="name arvo fz-1--1">FREDO</p></li>
 										</ul>
 									</td>
 								</tr>
@@ -912,13 +1091,13 @@
 								<tr>
 									<td>
 										<ul class="bullet">
-											<li><p class="name bebas fz-1--1">SOPA DE FIDEO</p></li>
+											<li><p class="name arvo fz-1--1">SOPA DE FIDEO</p></li>
 										</ul>
 
 									</td>
 									<td>
 										<ul class="bullet">
-											<li><p class="name bebas fz-1--1">RUBENS DARÍO</p></li>
+											<li><p class="name arvo fz-1--1">RUBENS DARÍO</p></li>
 										</ul>
 									</td>
 								</tr>
@@ -945,7 +1124,7 @@
 						<div class="col-sm-6">
 							<div class="text-left p1 fz-1--5">
 								<div class="flex-rz space-between">
-									<p class="name bebas fz-1--1 flex-start">PECHUGA DE POLLO FOUCAULT<img class="ml-5px" src="https://pendulo.com/archivos/d4.png" alt=""></p>
+									<p class="name arvo fz-1--1 flex-start">PECHUGA DE POLLO FOUCAULT<img class="ml-5px" src="https://pendulo.com/archivos/d4.png" alt=""></p>
 									<span class="line-1"></span>
 									<p class="name roboto-condensed"> $188</p>
 								</div>
@@ -959,7 +1138,7 @@
 								<p class="roboto-condensed brown-text mb-1--5">Pechuga de pollo <span class="mustache-text">(200 g)</span> a la plancha, servida sobre fetuccini <span class="mustache-text">(200 g)</span> en salsa de limón y acompañada de queso parmesano.</p>
 
 								<div class="flex-rz space-between">
-									<p class="name bebas fz-1--1 flex-start">POLLO A LA CERVEZA<img class="ml-5px" src="https://pendulo.com/archivos/d4.png" alt=""></p>
+									<p class="name arvo fz-1--1 flex-start">POLLO A LA CERVEZA<img class="ml-5px" src="https://pendulo.com/archivos/d4.png" alt=""></p>
 									<span class="line-1"></span>
 									<p class="name roboto-condensed"> $179</p>
 								</div>
@@ -974,7 +1153,7 @@
 								<p class="roboto-condensed brown-text mb-1--5"><span class="mustache-text fw-600">469 kcal.</span> Pechuga de pollo, cebolla y pimientos rojo y verde sobre una cama de cebolla y cubos de zanahoria. Acompañada de jitomate asado, champiñón y dos rajas de chile serrano y arroz blanco.</p>
 
 								<div class="flex-rz space-between">
-									<p class="name bebas fz-1--1">ARRACHERA SIQUEIROS</p>
+									<p class="name arvo fz-1--1">ARRACHERA SIQUEIROS</p>
 									<span class="line-1"></span>
 									<p class="name roboto-condensed"> $220</p>
 								</div>
@@ -988,7 +1167,7 @@
 								<p class="roboto-condensed brown-text mb-1--5">Tacos <span class="mustache-text">(4 piezas)</span> en tortilla de harina o maiz con arrachera y queso gouda. Acompañados de guacamole, cebollitas y nopalitos cambray.</p>
 
 								<div class="flex-rz space-between">
-									<p class="name-wrap bebas fz-1--1">FILETE DE PESCADO AL AXIOTE NICANOR</p>
+									<p class="name-wrap arvo fz-1--1">FILETE DE PESCADO AL AXIOTE NICANOR</p>
 									<span class="line-1"></span>
 									<p class="name roboto-condensed"> $179</p>
 								</div>
@@ -1005,7 +1184,7 @@
 								</div>
 								<p class="roboto-condensed brown-text mb-1--5">Pescado <span class="mustache-text">(200 g)</span> empanizado sobre un espejo de salsa de cilantro. Acompañado de fetuccini <span class="mustache-text">(100 g)</span> en crema de cilantro.</p>
 
-								<p class="name-wrap bebas fz-1--1 flex-start">ENCHILADAS MICHOACANAS <img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
+								<p class="name-wrap arvo fz-1--1 flex-start">ENCHILADAS MICHOACANAS <img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
 								<div class="flex-rz space-between">
 									<p class="name roboto-condensed"><span class="mustache-text">3 piezas</span></p>
 									<span class="line-1"></span>
@@ -1021,7 +1200,7 @@
 								</div>
 								<p class="roboto-condensed brown-text mb-1--5">Tacos de setas adobadas, acompañados de cilantro, cebolla, piña y guacamole. En su elección de tortilla de harina o maiz.</p>
 
-								<p class="name-wrap bebas fz-1--1">ENCHILADAS SUIZAS VERDES O ROJAS</p>
+								<p class="name-wrap arvo fz-1--1">ENCHILADAS SUIZAS VERDES O ROJAS</p>
 								<div class="flex-rz space-between">
 									<p class="name roboto-condensed"><span class="mustache-text">3 piezas</span></p>
 									<span class="line-1"></span>
@@ -1037,7 +1216,7 @@
 								</div>
 								<p class="roboto-condensed brown-text mb-1--5">Las clásicas bañadas de mole con un toque de crema, queso y cebolla morada. Acompañadas con frijoles refritos.</p>
 
-								<p class="name bebas fz-1--1">ENCHILADAS MONSIVÁIS</p>
+								<p class="name arvo fz-1--1">ENCHILADAS MONSIVÁIS</p>
 								<div class="flex-rz space-between">
 									<p class="name roboto-condensed"><span class="mustache-text">3 piezas</span></p>
 									<span class="line-1"></span>
@@ -1068,7 +1247,7 @@
 									<p class="name roboto-condensed">Medio <span class="mustache-text">(90g)</span> $110</p>
 								</div>
 
-								<p class="name bebas fz-1--1">SÁNDWICH FREDO DE YORK</p>
+								<p class="name arvo fz-1--1">SÁNDWICH FREDO DE YORK</p>
 								<p class="roboto-condensed brown-text m0">Sándwich de jamón York <span class="mustache-text">(200 g)</span>, jitomate, lechuga y queso gouda fundido <span class="mustache-text">(100 g)</span>.</p>
 								<div class="flex-rz space-between mb-1--5">
 									<p class="name roboto-condensed">Comleto $188</p>
@@ -1086,7 +1265,7 @@
 									<p class="name roboto-condensed">Medio <span class="mustache-text">(40g)</span> $120</p>
 								</div>
 
-								<p class="name bebas fz-1--1">SÁNDWICH RUBENS DARÍO</p>
+								<p class="name arvo fz-1--1">SÁNDWICH RUBENS DARÍO</p>
 								<p class="roboto-condensed brown-text m0">Sándwich de roast beef <span class="mustache-text">(120 g)</span>, chucrut, queso gruyere <span class="mustache-text">(80g)</span>, lechuga, jitomate, aguacate, mayonesa y salsa de pimienta.</p>
 								<div class="flex-rz space-between mb-1--5">
 									<p class="name roboto-condensed">Comleto $240</p>
@@ -1097,9 +1276,9 @@
 							<div class="col-md-6 text-left p1 fz-1--5">
 
 								<div class="flex-rz space-between">
-									<p class="name-wrap bebas fz-1--1 flex-start">SÁNDWICH VEGGIE COETZEE<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
+									<p class="name-wrap arvo fz-1--1 flex-start">SÁNDWICH VEGGIE COETZEE<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
 								</div>
-								<p class="name bebas fz-1--1"></p>
+								<p class="name arvo fz-1--1"></p>
 								<p class="roboto-condensed brown-text m0">Relleno de lechuga, jitomate, calabaza italiana, berenjena, aguacate y germen de alfalfa. Acompañado de papa cambray.</p>
 								<div class="flex-rz space-between mb-1--5">
 									<p class="name roboto-condensed">Comleto <span class="mustache-text">(600g)</span> $140</p>
@@ -1117,7 +1296,7 @@
 
 								<p class="name arvo"></p>
 								<div class="flex-rz space-between">
-									<p class="name bebas fz-1--1">HAMBURGUESA BRODSKY</p>
+									<p class="name arvo fz-1--1">HAMBURGUESA BRODSKY</p>
 									<span class="line-1"></span>
 									<p class="name roboto-condensed"> $199</p>
 								</div>
@@ -1144,7 +1323,7 @@
 						<div class="text-left p1 fz-1--5">
 							<img class="w-50" src="https://pendulo.com/archivos/pleca-1.png" alt="">
 							<div class="flex-rz space-between mt-1em mb-1--5">
-								<p class="name bebas fz-1--1">AMERICANO</p>
+								<p class="name arvo fz-1--1">AMERICANO</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">325ml</span>$44</p>
 							</div>
@@ -1156,7 +1335,7 @@
 							</div>
 
 							<div class="flex-rz space-between mt-1em mb-1--5">
-								<p class="name bebas fz-1--1">EXPRESSO DOBLE<span class="name oswald brown-light-text"> (normal o cortado)</span></p>
+								<p class="name arvo fz-1--1">EXPRESSO DOBLE<span class="name oswald brown-light-text"> (normal o cortado)</span></p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">120ml</span>$58</p>
 							</div>
@@ -1168,7 +1347,7 @@
 							</div>
 
 							<div class="flex-rz space-between mt-1em mb-1--5">
-								<p class="name bebas fz-1--1">LATTE</p>
+								<p class="name arvo fz-1--1">LATTE</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">325ml</span>$54</p>
 							</div>
@@ -1180,7 +1359,7 @@
 							</div>
 
 							<div class="flex-rz space-between mt-1em">
-								<p class="name bebas fz-1--1">CAPUCHINO</p>
+								<p class="name arvo fz-1--1">CAPUCHINO</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">180ml</span>$54</p>
 							</div>
@@ -1202,7 +1381,7 @@
 							</div>
 
 							<div class="flex-rz space-between">
-								<p class="name bebas fz-1--1">CAPUCHINO FRAPPÉ</p>
+								<p class="name arvo fz-1--1">CAPUCHINO FRAPPÉ</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">300ml</span>$71</p>
 							</div>
@@ -1228,7 +1407,7 @@
 							<p class="name oswald brown-light-text ">fresa, vainilla o chocolate</p>
 
 							<div class="flex-rz space-between mb-1--5 mt-1em">
-								<p class="name bebas fz-1--1">CHOCOLATE <span class="name oswald brown-light-text">(caliente o frío)</span></p>
+								<p class="name arvo fz-1--1">CHOCOLATE <span class="name oswald brown-light-text">(caliente o frío)</span></p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">325 ml</span>$47</p>
 							</div>
@@ -1241,7 +1420,7 @@
 							<p class="name oswald brown-light-text">Mango o guanábana.</p>
 
 							<div class="flex-rz space-between mb-1--5 mt-1em">
-								<p class="name bebas fz-1--1">PIÑA COLADAs<span class="name oswald brown-light-text">(caliente o frío)</span></p>
+								<p class="name arvo fz-1--1">PIÑA COLADAs<span class="name oswald brown-light-text">(caliente o frío)</span></p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">325 ml</span>$62</p>
 							</div>
@@ -1252,7 +1431,7 @@
 		 				<img class="w-70 my-2em" src="https://pendulo.com/archivos/te.png" alt="">
 						<div class="text-left p1 fz-1--5">
 							<div class="flex-rz space-between mb-1--5">
-								<p class="name bebas fz-1--1">TÉ CHAI LATTE</p>
+								<p class="name arvo fz-1--1">TÉ CHAI LATTE</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="name oswald brown-light-text pr-5px">(calienet o frío)</span><span class="mustache-text pr-5px">325 ml</span>$65</p>
 							</div>
@@ -1265,7 +1444,7 @@
 							<p class="name oswald brown-light-text">Tetera para dos tazas</p>
 
 							<div class="flex-rz space-between mb-1--5 mt-1em">
-								<p class="name bebas fz-1--1">TÉ FRAPPÉ DE MARACUYÁ Y MANGO</p>
+								<p class="name arvo fz-1--1">TÉ FRAPPÉ DE MARACUYÁ Y MANGO</p>
 								<span class="line-1"></span>
 								<p class="brown-text roboto-condensed fw-900 m0 nowrap"><span class="mustache-text pr-5px">325 ml</span>$59</p>
 							</div>
@@ -1277,7 +1456,7 @@
 							</div>
 
 							<div class="flex-rz space-between">
-								<p class="name bebas fz-1--1">TÉ TWININGS</p>
+								<p class="name arvo fz-1--1">TÉ TWININGS</p>
 								<span class="line-1"></span>
 								<p class="brown-text roboto-condensed fw-900 m0 nowrap"><span class="mustache-text pr-5px">325 ml</span>$44</p>
 							</div>
@@ -1293,7 +1472,7 @@
 							</div>
 
 							<div class="flex-rz space-between mb-1--5">
-								<p class="name bebas fz-1--1">MATCHA LATTE FRÍO</p>
+								<p class="name arvo fz-1--1">MATCHA LATTE FRÍO</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">300 ml</span>$61</p>
 							</div>
@@ -1305,7 +1484,7 @@
 							</div>
 
 							<div class="flex-rz space-between mb-1--5">
-								<p class="name bebas fz-1--1">COCO MATCHA</p>
+								<p class="name arvo fz-1--1">COCO MATCHA</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">220 ml</span>$51</p>
 							</div>
@@ -1322,7 +1501,7 @@
 							</div>
 
 							<div class="flex-rz space-between mb-1--5 mt-1em">
-								<p class="name bebas fz-1--1">LIMONADA O NARANJADA</p>
+								<p class="name arvo fz-1--1">LIMONADA O NARANJADA</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">300 ml</span>$47</p>
 							</div>
@@ -1334,7 +1513,7 @@
 							</div>
 
 							<div class="flex-rz space-between mt-1em">
-								<p class="name bebas fz-1--1">VASO DE LECHE</p>
+								<p class="name arvo fz-1--1">VASO DE LECHE</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">300 ml</span>$26</p>
 							</div>
@@ -1346,7 +1525,7 @@
 							</div>
 
 							<div class="flex-rz space-between mt-1em">
-								<p class="name bebas fz-1--1">FLOTANTES VAINILLA O DE LIMÓN</p>
+								<p class="name arvo fz-1--1">FLOTANTES VAINILLA O DE LIMÓN</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">355 ml</span>$68</p>
 							</div>
@@ -1357,12 +1536,12 @@
 							<div class="flex-rz center al-center">
 								<p class="name arvo">CORONA</p>
 								<span class="dot-1"></span>
-								<p class="name bebas fz-1--1">CORONA LIGHT</p>
+								<p class="name arvo fz-1--1">CORONA LIGHT</p>
 							</div>
 							<div class="flex-rz center al-center">
 								<p class="name arvo">VICTORIA</p>
 								<span class="dot-1"></span>
-								<p class="name bebas fz-1--1">NEGRA MODELO</p>
+								<p class="name arvo fz-1--1">NEGRA MODELO</p>
 							</div>
 							<div class="flex-rz center al-center">
 								<p class="name roboto-condensed circle-1">$52</p>
@@ -1380,7 +1559,7 @@
 							<p class="roboto-condensed brown-text">MÉXICO LAGER ESTILO JAPONÉS CON ARROZ</p>
 
 							<div class="flex-rz space-between mt-1em">
-								<p class="name bebas fz-1--1">INDECOROSA</p>
+								<p class="name arvo fz-1--1">INDECOROSA</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">355 ml</span>$82</p>
 							</div>
@@ -1394,7 +1573,7 @@
 							<p class="roboto-condensed brown-text">MÉXICO STOUT OSCURA</p>
 
 							<div class="flex-rz space-between mt-1em">
-								<p class="name bebas fz-1--1">STELLA ARTROIS</p>
+								<p class="name arvo fz-1--1">STELLA ARTROIS</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">330 ml</span>$60</p>
 							</div>
@@ -1411,7 +1590,7 @@
 							<p class="roboto-condensed brown-text">MÉXICO LAGER ESTILO JAPONÉS CON ARROZ</p>
 
 							<div class="flex-rz space-between mt-1em">
-								<p class="name bebas fz-1--1">INDECOROSA</p>
+								<p class="name arvo fz-1--1">INDECOROSA</p>
 								<span class="line-1"></span>
 								<p class="name roboto-condensed"><span class="mustache-text pr-5px">355 ml</span>$82</p>
 							</div>
@@ -1426,7 +1605,7 @@
 		  <div class="card" data-toggle="collapse" data-target="#entradas-sm">
 		    <div class="card-header" id="headingOne">
 		      <h5 class="mb-0 text-center">
-		        <button class="btn bebas btn-collapse"  aria-expanded="true" aria-controls="">
+		        <button class="btn arvo btn-collapse"  aria-expanded="true" aria-controls="">
 		          Entradas
 		        </button>
 		      </h5>
@@ -1443,7 +1622,7 @@
 					</div>
 					<p class="roboto-condensed brown-text mb-1--5">Rebanadas de queso de cabra empanizadas y doradas al punto. Acompañadas de aguacate, sobre una cama de espinacas, bañadas con vinagreta de ajonjoli y salpicadas con ajonjoli tostado.</p>
 
-					<p class="name bebas fz-1--1">EMPANADITAS CASERAS</p>
+					<p class="name arvo fz-1--1">EMPANADITAS CASERAS</p>
 					<div class="flex-rz space-between">
 						<p class="name roboto-condensed"><span class="mustache-text">6 piezas</span></p>
 						<span class="line-1"></span>
@@ -1460,7 +1639,7 @@
 					<p class="roboto-condensed brown-text mb-1--5">Dedos de queso gouda empanizados, sobre un espejo de su elección de salsa verde al cilantro, salsa de tamarindo o mixtos. cAcompañados de papa paja al centro.</p>
 
 					<div class=" marker_1">
-						<p class="name bebas flex items-center fz-1--1"><img class="w-50px mr-1" src="https://pendulo.com/archivos/compartir.png" alt=""> TABLITA MEXICANA </p>
+						<p class="name arvo flex items-center fz-1--1"><img class="w-50px mr-1" src="https://pendulo.com/archivos/compartir.png" alt=""> TABLITA MEXICANA </p>
 						<div class="flex-rz space-between">
 							<p class="name roboto-condensed"><span class="mustache-text">6 piezas</span></p>
 							<span class="line-1"></span>
@@ -1475,7 +1654,7 @@
 		  <div class="card" data-toggle="collapse" data-target="#ensaladas-sm">
 		    <div class="card-header" id="headingTwo">
 		      <h5 class="mb-0 text-center">
-		        <button class="btn collapsed bebas btn-collapse"  aria-expanded="false" aria-controls="collapseTwo">
+		        <button class="btn collapsed arvo btn-collapse"  aria-expanded="false" aria-controls="collapseTwo">
 		          ENSALADAS
 		        </button>
 		      </h5>
@@ -1483,7 +1662,7 @@
 		    <div id="ensaladas-sm" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 		      <div class="card-body">
 		        <div class="text-left p1 fz-1--5">
-					<p class="name-wrap bebas fz-1--1 flex-start">ENSALADA DE ESPINACA PERA Y PALMITO<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
+					<p class="name-wrap arvo fz-1--1 flex-start">ENSALADA DE ESPINACA PERA Y PALMITO<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
 					<p class="roboto-condensed brown-text m0">Espinaca fresca, pera, fresa, queso de cabra, palmito,  suprema de toronja, nuez y aderezo de jamaica.</p>
 					<div class="flex-rz space-between mb-1--5">
 						<p class="name roboto-condensed">COMPLETA <span class="mustache-text">600g</span> $190</p>
@@ -1499,7 +1678,7 @@
 						<p class="name roboto-condensed">MEDIA <span class="mustache-text">220g</span> $101</p>
 					</div>
 
-					<p class="name bebas fz-1--1 flex-start">LA GRIEGA DE LOS ASOMBROS<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
+					<p class="name arvo fz-1--1 flex-start">LA GRIEGA DE LOS ASOMBROS<img class="ml-5px" src="https://pendulo.com/archivos/d2.png" alt=""></p>
 					<p class="roboto-condensed brown-text m0">De dos tipos de lechuga, pepino, jitomate, cebolla, pimiento rojo, aceituna negra y queso feta, se adereza con vinagreta de limón.</p>
 					<div class="flex-rz space-between mb-1--5">
 						<p class="name roboto-condensed">COMPLETA <span class="mustache-text">380g</span> $183</p>
@@ -1532,6 +1711,7 @@
 		      </div>
 		    </div>
 		  </div>
+		</div>
 		</div>
 	</div>
 
@@ -1587,6 +1767,17 @@
 		</div>
 	</footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+	<script type="text/javascript" src="app.js"></script>
 
 <script type="text/javascript">
 	$( document ).ready(function() {
@@ -1604,7 +1795,18 @@ function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
 	$('#bgfilter').removeClass('show-1');
 };
+
+// (function ($) {
+//     var $masonry = $('.collapse');
+//     $masonry.masonry({
+//         itemSelector: '.card-item'
+//     }).on('shown.bs.collapse hidden.bs.collapse', function() {
+//         $masonry.masonry();
+//     });
+// })(jQuery);
 </script>
 
 </body>
 </html>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

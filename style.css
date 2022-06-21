@@ -263,7 +263,7 @@ h1{font-size: 7em;font-family: 'black', cursive;}
 }
 .logo-1{
 	display: block;
-	width: 170px;
+	width: 250px;
 	margin: 2em auto;
 }
 .img-1{
@@ -559,7 +559,9 @@ footer a{
 
 .btn-lang-2{
 	border: none;
-	background: none;
+  border-radius: 10px;
+  color: #2e5f62;
+	background-color: #d1d1d1;
 	font-size: 1.4em;
 	color: #000;
 	margin-top: 10px;
@@ -756,7 +758,7 @@ body.bg-cap{
 
 a.nav-link{
 	font-family: 'Bebas Neue';
-    font-size: 2em;
+    font-size: 3em;
 }
 
 /*TABS*/
@@ -771,12 +773,21 @@ a.nav-link{
 }
 
 
-a.nav-link{font-size: 3em;}
-
-
-
 @media all and (min-width: 0px) and (max-width: 500px){
     .nav-pills .nav-link.active, .nav-pills .show>.nav-link{background-color: #A9A9AA;}
+    a.nav-link{
+      font-size: 2em;
+    }
+    .nav-link {
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .nav>li {
+      width: 30%;
+    }
+    .logo-1{
+    	width: 150px;
+    }
 }
 
 }
@@ -794,4 +805,13 @@ ul.bullet{
 	outline: solid #f39200;
     outline-style: double;
     outline-width: 6px;
+}
+
+.collapse-button .fa {
+	color: #d1d1d1;
+	transition: .3s transform ease-in-out;
+	font-size: 2.5rem;
+}
+.collapsed .fa {
+	transform: rotate(-180deg);
 }
