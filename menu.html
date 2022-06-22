@@ -34,34 +34,33 @@
 	<div class="container-xxl">
 		<div class="row">
 			<div class="col-md-12">
-				<img class="logo-1" src="https://pendulo.com/archivos/logo-brown.png" alt="">
+				<img class="logo-1" src="img/logo0.png" alt="">
 				<div class="header_language-buttons-2">
-					<button class="btn-lang-2" onclick="changeLang('es')">ESP</button>
-					<button class="btn-lang-2" id="eng" onclick="changeLang('en')">ENG</button>
+					<button class="btn-lang-on" onclick="changeLang('es')">ESP</button>
+					<button class="btn-lang-off" id="eng" onclick="changeLang('en')">ENG</button>
 				</div>
 				<span class="center-center">
 					<a class="z-5" href="index.html"><span><i class="fas fa-arrow-left"></span></i></a>
-					<h2 class="subtitle-4">MENU</h2>
+					<h2 class="subtitle-4">MENÚ</h2>
 				</span>
-				<div class="center-center">
+				<div class="center-center pb-5">
 					<span class="mx-10px">
 						<img class="pr-5px" src="https://pendulo.com/archivos/d1.png" alt="">
-						<p class="dancing contents fz-1--5">Nuevo</p>
+						<p class="dancing contents fz-2">Nuevo</p>
 					</span>
 					<span class="mx-10px">
 						<img class="pr-5px" src="https://pendulo.com/archivos/d2.png" alt="">
-						<p class="dancing contents fz-1--5">Vegetariano</p>
+						<p class="dancing contents fz-2">Vegetariano</p>
 					</span>
 					<span class="mx-10px">
 						<img class="pr-5px" src="https://pendulo.com/archivos/d3.png" alt="">
-						<p class="dancing contents fz-1--5">Light</p>
+						<p class="dancing contents fz-2">Light</p>
 					</span>
 					<span class="mx-10px">
 						<img class="pr-5px" src="https://pendulo.com/archivos/d4.png" alt="">
-						<p class="dancing contents fz-1--5">Nueva Receta</p>
+						<p class="dancing contents fz-2">Nueva Receta</p>
 					</span>
 				</div>
-				<p class="text-2 py-3em">EL MENÚ DE DESAYUNOS ESTÁ DISPONIBLE TODOS LOS DÍAS HASTA LA 1:00 P.M.</p>
 			</div>
 		</div>
 	</div>
@@ -86,6 +85,7 @@
 		<div class="tab-content">
 			<!--DESAYUNO-->
 			<div class="tab-pane container active" id="desayunos">
+				<p class="text-2 py-3em">EL MENÚ DE DESAYUNOS ESTÁ DISPONIBLE TODOS LOS DÍAS HASTA LA 1:00 P.M.</p>
 				<!--PARA EMPEZAR-->
 				<div class="row">
 					<div class="col-md-4 text-center"></div>
@@ -101,104 +101,181 @@
 					</div>
 				</div>
 				<div class="collapse show" id="collapseEmpezar">
-					<div class="row" data-masonry='{"percentPosition": true }'>
+					<div class="row">
 						<div class="col-md-4 text-center">
 							<div class="text-left p1 fz-1--5">
-								<div class="flex-rz space-between">
-									<p class="name arvo">PLATO DE FRUTAS DE LA ESTACIÓN</p>
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapseEmpezar1" role="button" aria-expanded="true"  style="text-decoration: none;">
+										<p class="name arvo fz-1--1">PLATO DE FRUTAS DE LA ESTACIÓN</p>
+									</a>
+									<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseEmpezar1" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
+								</div>
+								<div class="collapse" id="collapseEmpezar1">
+									<img src="./img/fotos/empezar-frutas.png" alt="" style="width: 100%; margin-bottom: 10px;">
 									<div class="flex-rz space-between">
 										<p class="name roboto-condensed"><span class="mustache-text">320g</span></p>
 										<span class="line-1"></span>
 										<p class="name roboto-condensed"> $72</p>
 									</div>
-								</div>
 								<p class="roboto-condensed brown-text mb-0">Fruta fresca del día a su elección.</p>
 								<p class="name oswald">chico <span class="brown-text roboto-condensed fw-900"><span class="mustache-text pr-5px">160g</span>$46</span></p>
 								<p class="name oswald">con queso cottage <span class="mustache-text pr-5px">90g</span>o yogurth<span class="mustache-text pr-5px">100g</span><span class="name roboto-condensed"> + $27</span></p>
 								<p class="name oswald">con granola <span class="mustache-text pr-5px">50g</span><span class="name roboto-condensed"> + $17</span></p>
+								</div>
 							</div>
 						</div>
+
 						<div class="col-md-4 text-center">
 							<div class="text-left p1 fz-1--5">
-								<div class="flex-rz space-between">
-									<p class="name arvo fz-1--1">SINCRONIZADAS ARTAUD</p>
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapseEmpezar2" role="button" aria-expanded="true"  style="text-decoration: none;">
+										<p class="name arvo fz-1--1">SINCRONIZADAS ARTAUD</p>
+									</a>
+									<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseEmpezar2" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
+								</div>
+								<div class="collapse" id="collapseEmpezar2">
 									<div class="flex-rz space-between">
-										<p class="name roboto-condensed"><span class="mustache-text">200 piezas</span></p>
+										<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
 										<span class="line-1"></span>
 										<p class="name roboto-condensed"> $112</p>
 									</div>
 								</div>
 							</div>
 						</div>
+
 						<div class="col-md-4 text-center">
 							<div class="text-left p1 fz-1--5">
-								<p class="name arvo fz-1--1">AÇAI BOWL</p>
-								<div class="flex-rz space-between">
-									<p class="name roboto-condensed"><span class="mustache-text">350g</span></p>
-									<span class="line-1"></span>
-									<p class="name roboto-condensed"> $125</p>
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapseEmpezar3" role="button" aria-expanded="true"  style="text-decoration: none;">
+										<p class="name arvo fz-1--1">AÇAI BOWL</p>
+									</a>
+									<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseEmpezar3" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
 								</div>
-								<p class="roboto-condensed brown-text mb-1--5">Pulpa de açai, frutos rojos y plátano molido, servido con coco rallado tostado, granola, fresa, mora azul, arándano, zarzamora, frambuesa, plátano y un toque de miel de abeja.</p>
+								<div class="collapse" id="collapseEmpezar3">
+									<img src="./img/fotos/empezar-acai.png" alt="" style="width: 100%; margin-bottom: 10px;">
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed"><span class="mustache-text">350g</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed"> $125</p>
+									</div>
+									<p class="roboto-condensed brown-text mb-1--5">Pulpa de açai, frutos rojos y plátano molido, servido con coco rallado tostado, granola, fresa, mora azul, arándano, zarzamora, frambuesa, plátano y un toque de miel de abeja.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapseEmpezar4" role="button" aria-expanded="true"  style="text-decoration: none;">
+										<p class="name arvo fz-1--1">YOGURT ESPECIAL</p>
+									</a>
+									<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseEmpezar4" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
+								</div>
+								<div class="collapse" id="collapseEmpezar4">
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed"><span class="mustache-text">350g</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed"> $125</p>
+									</div>
+									<p class="roboto-condensed brown-text mb-1--5">Pulpa de açai, frutos rojos y plátano molido, servido con coco rallado tostado, granola, fresa, mora azul, arándano, zarzamora, frambuesa, plátano y un toque de miel de abeja.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 text-center">
+							<div class="text-left p1 fz-1--5">
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapseEmpezar5" role="button" aria-expanded="true"  style="text-decoration: none;">
+										<p class="name arvo fz-1--1">BISQUETS CLÁSICOS</p>
+									</a>
+									<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseEmpezar5" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
+								</div>
+								<div class="collapse" id="collapseEmpezar5">
+									<img src="./img/fotos/empezar-bisquets.png" alt="" style="width: 100%; margin-bottom: 10px;">
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed"><span class="mustache-text">4 mitades</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed"> $68</p>
+									</div>
+									<p class="roboto-condensed brown-text mb-0">Hechos en casa, tostados con mantequilla y servidos con mermelada de fresa, guayaba o jamaica.</p>
+									<div class="flex-rz space-between mb-1--5">
+										<p class="name roboto-condensed"><span class="mustache-text">Media orden: 2 mitades</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed">$42</p>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-md-4 text-center">
 							<div class="text-left p1 fz-1--5">
-								<p class="name arvo fz-1--1">YOGURT ESPECIAL</p>
-								<div class="flex-rz space-between">
-									<p class="name roboto-condensed"><span class="mustache-text">370g</span></p>
-									<span class="line-1"></span>
-									<p class="name roboto-condensed"> $81</p>
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapseEmpezar6" role="button" aria-expanded="true"  style="text-decoration: none;">
+										<p class="name arvo fz-1--1">MOLLETES CASEROS</p>
+									</a>
+									<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseEmpezar6" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
 								</div>
-								<p class="roboto-condensed brown-text mb-1--5">Pulpa de açai, frutos rojos y plátano molido, servido con coco rallado tostado, granola, fresa, mora azul, arándano, zarzamora, frambuesa, plátano y un toque de miel de abeja.</p>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="text-left p1 fz-1--5">
-								<p class="name arvo fz-1--1">BISQUETS CLÁSICOS</p>
-								<div class="flex-rz space-between">
-									<p class="name roboto-condensed"><span class="mustache-text">4 mitades</span></p>
-									<span class="line-1"></span>
-									<p class="name roboto-condensed"> $68</p>
-								</div>
-								<p class="roboto-condensed brown-text mb-0">Hechos en casa, tostados con mantequilla y servidos con mermelada de fresa, guayaba o jamaica.</p>
-								<div class="flex-rz space-between mb-1--5">
-									<p class="name roboto-condensed"><span class="mustache-text">Media orden: 2 mitades</span></p>
-									<span class="line-1"></span>
-									<p class="name roboto-condensed">$42</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center">
-							<div class="text-left p1 fz-1--5">
-								<p class="name arvo fz-1--1">MOLLETES CASEROS</p>
-								<div class="flex-rz space-between">
+								<div class="collapse" id="collapseEmpezar6">
+									<img src="./img/fotos/empezar-molletes.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
+									<div class="flex-rz space-between">
 									<p class="name roboto-condensed"><span class="mustache-text">2 mitades</span></p>
 									<span class="line-1"></span>
 									<p class="name roboto-condensed"> $93</p>
 								</div>
 								<p class="roboto-condensed brown-text mb-1--5">En pan casero con mantequilla, frijoles, queso gouda y aguacate. Se sirve con pico de gallo.</p>
+								</div>
 							</div>
 						</div>
 						<div class="col-md-4 text-center">
 							<div class="text-left p1 fz-1--5">
-								<p class="name arvo fz-1--1">MOLLÁRABE</p>
-								<div class="flex-rz space-between">
-									<p class="name roboto-condensed"><span class="mustache-text">1 pieza</span></p>
-									<span class="line-1"></span>
-									<p class="name roboto-condensed"> $96</p>
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapseEmpezar7" role="button" aria-expanded="true"  style="text-decoration: none;">
+										<p class="name arvo fz-1--1">MOLLÁRABE</p>
+									</a>
+									<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseEmpezar7" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
 								</div>
-								<p class="roboto-condensed brown-text mb-1--5">Pan árabe relleno de frijoles refritos, queso Oaxaca fundido, mayones y aguacate. Se sirve con pico de gallo.</p>
+								<div class="collapse" id="collapseEmpezar7">
+									<img src="./img/fotos/empezar-mollarabe.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed"><span class="mustache-text">1 pieza</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed"> $96</p>
+									</div>
+									<p class="roboto-condensed brown-text mb-1--5">Pan árabe relleno de frijoles refritos, queso Oaxaca fundido, mayones y aguacate. Se sirve con pico de gallo.</p>
+								</div>
 							</div>
 						</div>
 						<div class="col-md-4 text-center">
 							<div class="text-left p1 fz-1--5">
-								<p class="name arvo fz-1--1">QUESO PANELA ASADO</p>
-								<div class="flex-rz space-between">
-									<p class="name roboto-condensed"><span class="mustache-text">150G</span></p>
-									<span class="line-1"></span>
-									<p class="name roboto-condensed"> $51</p>
+								<div class="d-flex justify-content-between">
+									<a data-toggle="collapse" href="#collapseEmpezar8" role="button" aria-expanded="true"  style="text-decoration: none;">
+										<p class="name arvo fz-1--1">QUESO PANELA ASADO</p>
+									</a>
+									<a class="collapse-button collapsed" data-toggle="collapse" href="#collapseEmpezar8" aria-expanded="true">
+										<i class="fa fa-chevron-down"></i>
+									</a>
 								</div>
-								<p class="roboto-condensed brown-text mb-1--5">Queso panela asado envuelto por un nopal también asado sobre un espejo de salsa pasilla, espolvoreado con queso fresco rallado, se acompaña de frijoles refritos y un abanico de aguacate fresco.</p>
+								<div class="collapse" id="collapseEmpezar8">
+									<div class="flex-rz space-between">
+										<p class="name roboto-condensed"><span class="mustache-text">150G</span></p>
+										<span class="line-1"></span>
+										<p class="name roboto-condensed"> $51</p>
+									</div>
+									<p class="roboto-condensed brown-text mb-1--5">Queso panela asado envuelto por un nopal también asado sobre un espejo de salsa pasilla, espolvoreado con queso fresco rallado, se acompaña de frijoles refritos y un abanico de aguacate fresco.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -377,7 +454,7 @@
 									</a>
 								</div>
 								<div class="collapse" id="collapsePaquete1">
-									<img src="./img/fotos/Huevos-en-cazuela-de-barro.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
+									<img src="./img/fotos/paquetes-cazuela.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
 									<div class="flex-rz space-between">
 										<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
 										<span class="line-1"></span>
@@ -391,14 +468,14 @@
 							<div class="text-left p1 fz-1--5">
 								<div class="d-flex justify-content-between">
 									<a data-toggle="collapse" href="#collapsePaquete2" role="button" aria-expanded="true"  style="text-decoration: none;">
-										<p class="name arvo fz-1--1" style="white-space: normal;">ENCHILADAS SUIZAS, VERDES O ROJAS</p>
+										<p class="name arvo fz-1--1" style="white-space: normal;">ENCHILADAS SUIZAS</p>
 									</a>
 									<a class="collapse-button collapsed" data-toggle="collapse" href="#collapsePaquete2" aria-expanded="true">
 										<i class="fa fa-chevron-down"></i>
 									</a>
 								</div>
 								<div class="collapse" id="collapsePaquete2">
-									<img src="./img/fotos/Enchiladas-suizas-verdes.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
+									<img src="./img/fotos/paquetes-enchiladas.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
 									<div class="flex-rz space-between">
 										<p class="name roboto-condensed"><span class="mustache-text">3 piezas</span></p>
 										<span class="line-1"></span>
@@ -419,7 +496,7 @@
 									</a>
 								</div>
 								<div class="collapse" id="collapsePaquete3">
-									<img src="./img/fotos/Huevos-en-pasilla-Kumala.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
+									<img src="./img/fotos/paquetes-kumala.png" alt="" style="width: 100%; margin-bottom: 10px;">
 									<div class="flex-rz space-between">
 										<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
 										<span class="line-1"></span>
@@ -440,7 +517,7 @@
 									</a>
 								</div>
 								<div class="collapse" id="collapsePaquete4">
-									<img src="./img/fotos/Omelette-Juliette-con-ensalada.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
+									<img src="./img/fotos/paquetes-juliette.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
 									<div class="flex-rz space-between">
 										<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
 										<span class="line-1"></span>
@@ -461,7 +538,7 @@
 									</a>
 								</div>
 								<div class="collapse" id="collapsePaquete5">
-									<img src="./img/fotos/Huevos-Lenero.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
+									<img src="./img/fotos/paquetes-lenero.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
 									<div class="flex-rz space-between">
 										<p class="name roboto-condensed"><span class="mustache-text">2 piezas</span></p>
 										<span class="line-1"></span>
@@ -482,7 +559,7 @@
 									</a>
 								</div>
 								<div class="collapse" id="collapsePaquete6">
-									<img src="./img/fotos/Chilaquiles-crujientes-rojos-con-arrachera.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
+									<img src="./img/fotos/paquetes-chilaquiles.jpg" alt="" style="width: 100%; margin-bottom: 10px;">
 									<div class="flex-rz space-between">
 										<p class="name roboto-condensed"><span class="mustache-text">200 g</span></p>
 										<span class="line-1"></span>
@@ -655,7 +732,7 @@
 									<img class="w-70 my-2em" src="https://pendulo.com/archivos/brunch.png">
 								</a>
 							</div>
-							<div class="col-1 col-md-4 px-0  d-flex align-items-center justify-content-start text-center">
+							<div class="col-1 px-0  d-flex align-items-center justify-content-start text-center">
 								<a class="collapse-button" data-toggle="collapse" href="#collapseBrunch" aria-expanded="true">
 									<i class="fa fa-chevron-down"></i>
 								</a>
@@ -733,7 +810,7 @@
 									<img class="w-80 my-2em" src="https://pendulo.com/archivos/chil.png" alt="">
 								</a>
 							</div>
-							<div class="col-1 col-md-4 px-0  d-flex align-items-center justify-content-start text-center">
+							<div class="col-1 px-0  d-flex align-items-center justify-content-start text-center">
 								<a class="collapse-button" data-toggle="collapse" href="#collapseChilaquiles" aria-expanded="true">
 									<i class="fa fa-chevron-down"></i>
 								</a>
@@ -750,13 +827,17 @@
 							</div>
 						</div>
 
-						<div class="d-flex justify-content-around align-items-center">
-							<a class="collapse-button pl-5" data-toggle="collapse" href="#collapseHotCakes" aria-expanded="true">
-								<img class="w-80 my-2em" src="https://pendulo.com/archivos/hot-cakes1.png" alt="">
-							</a>
-							<a class="collapse-button" data-toggle="collapse" href="#collapseHotCakes" aria-expanded="true">
-								<i class="fa fa-chevron-down"></i>
-							</a>
+						<div class="row">
+							<div class="col-11">
+								<a class="collapse-button" data-toggle="collapse" href="#collapseHotCakes" aria-expanded="true">
+									<img class="w-60 my-2em" src="https://pendulo.com/archivos/hot-cakes1.png" alt="">
+								</a>
+							</div>
+							<div class="col-1 px-0  d-flex align-items-center justify-content-start text-center">
+								<a class="collapse-button" data-toggle="collapse" href="#collapseHotCakes" aria-expanded="true">
+									<i class="fa fa-chevron-down"></i>
+								</a>
+							</div>
 						</div>
 						<div class="collapse show" id="collapseHotCakes">
 							<div class="text-left p1 fz-1--5">
@@ -778,13 +859,17 @@
 							</div>
 						</div>
 
-						<div class="d-flex justify-content-around align-items-center">
-							<a class="collapse-button pl-5" data-toggle="collapse" href="#collapsePanFrances" aria-expanded="true">
-								<img class="w-80 my-2em" src="https://pendulo.com/archivos/hot-cakes2.png" alt="">
-							</a>
-							<a class="collapse-button" data-toggle="collapse" href="#collapsePanFrances" aria-expanded="true">
-								<i class="fa fa-chevron-down"></i>
-							</a>
+						<div class="row">
+							<div class="col-11">
+								<a class="collapse-button" data-toggle="collapse" href="#collapsePanFrances" aria-expanded="true">
+									<img class="w-60 my-2em" src="https://pendulo.com/archivos/hot-cakes2.png" alt="">
+								</a>
+							</div>
+							<div class="col-1 px-0  d-flex align-items-center justify-content-start text-center">
+								<a class="collapse-button" data-toggle="collapse" href="#collapsePanFrances" aria-expanded="true">
+									<i class="fa fa-chevron-down"></i>
+								</a>
+							</div>
 						</div>
 						<div class="collapse show" id="collapsePanFrances">
 							<div class="text-left p1 fz-1--5">

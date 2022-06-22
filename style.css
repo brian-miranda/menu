@@ -263,8 +263,8 @@ h1{font-size: 7em;font-family: 'black', cursive;}
 }
 .logo-1{
 	display: block;
-	width: 250px;
-	margin: 2em auto;
+	width: 220px;
+	margin: 0 auto;
 }
 .img-1{
 		height: 200px;
@@ -557,13 +557,18 @@ footer a{
 	margin-top: 10px;
 }
 
-.btn-lang-2{
+.btn-lang-on{
 	border: none;
-  border-radius: 10px;
-  color: #2e5f62;
-	background-color: #d1d1d1;
+  	color: #276667;
+	background-color: #FFF;
 	font-size: 1.4em;
-	color: #000;
+	margin-top: 10px;
+}
+.btn-lang-off{
+	border: none;
+  	color: #929793;
+	background-color: #D7D4CF;
+	font-size: 1.4em;
 	margin-top: 10px;
 }
 @media all and (min-width: 500px) and (max-width: 8000px){
@@ -765,8 +770,8 @@ a.nav-link{
 
 .tab-content{background-color: #fff;}
 
-.nav-link{background-color: #d1d1d1;color: #2e5f62;border-radius: 10px 10px 0 0;margin-right: 5px;}
-.nav>li>a:focus, .nav>li>a:hover,.nav-link.active,.nav-pills .nav-link.active, .nav-pills .show>.nav-link{background-color: #fff;color: #543b2a;}
+.nav-link{background-color: #d1d1d1 !important;color: #2e5f62;border-radius: 10px 10px 0 0;margin-right: 5px;}
+.nav>li>a:focus, .nav>li>a:hover,.nav-link.active,.nav-pills .nav-link.active, .nav-pills .show>.nav-link{background-color: #fff !important;color: #543b2a;}
 
 .nav>li {
   width: 20%;
@@ -774,7 +779,7 @@ a.nav-link{
 
 
 @media all and (min-width: 0px) and (max-width: 500px){
-    .nav-pills .nav-link.active, .nav-pills .show>.nav-link{background-color: #A9A9AA;}
+    
     a.nav-link{
       font-size: 2em;
     }
