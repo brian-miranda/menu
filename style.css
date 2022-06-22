@@ -369,7 +369,7 @@ h1{font-size: 7em;font-family: 'black', cursive;}
 		margin: 0;
 	}
 
-	.name .arvo {
+	.name.arvo {
 		white-space: normal;
 	}
 	/*@media all and (min-width: 0px) and (max-width: 992px){
