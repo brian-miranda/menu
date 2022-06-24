@@ -263,6 +263,7 @@ h1{font-size: 7em;font-family: 'black', cursive;}
 }
 .logo-1{
 	display: block;
+  float: left;
 	width: 220px;
 	margin: 0 auto;
 }
@@ -777,9 +778,14 @@ a.nav-link{
   width: 20%;
 }
 
+#menu-items {
+  margin-top: -150px;
+  margin-bottom: 40px;
+}
+
 
 @media all and (min-width: 0px) and (max-width: 500px){
-    
+
     a.nav-link{
       font-size: 2em;
     }
@@ -792,6 +798,10 @@ a.nav-link{
     }
     .logo-1{
     	width: 150px;
+    }
+    #menu-items {
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 }
 

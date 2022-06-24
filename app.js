@@ -54,6 +54,7 @@
 $(document).ready(function() {
     $('.carousel1').carousel({mouseDrag:true, interval:3000});
     $('.carousel2').carousel({mouseDrag:true, interval:3500});
+    $('.carousel3').carousel({mouseDrag:true, interval:3500});
 });
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
