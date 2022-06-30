@@ -194,3 +194,11 @@ $(window).resize(function(){
        }
 
 });
+
+$('i').click(function() {
+  $(this).toggleClass('fa-plus fa-minus');
+});
+
+$('.collapse-button').click(function() {
+  $(this).siblings().find('i').toggleClass('fa-plus fa-minus');
+});
