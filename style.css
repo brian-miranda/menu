@@ -148,6 +148,11 @@ body{background-color:#F4F2EF;}
     height: fit-content;
 	bottom: 0;
 	margin: auto;
+  margin-top: 160px;
+}
+
+.absolute-center h1{
+  font-size: 6em;
 }
 .obj-contain{object-fit: contain;}
 
@@ -266,6 +271,7 @@ h1{font-size: 7em;font-family: 'black', cursive;}
   float: left;
 	width: 220px;
 	margin: 0 auto;
+  opacity: .85;
 }
 .img-1{
 		height: 200px;
@@ -833,7 +839,7 @@ ul.bullet{
 .collapse-button .fa {
 	color: #d1d1d1;
 	transition: .3s transform ease-in-out;
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 /* .collapsed .fa {
 	transform: rotate(-180deg);
