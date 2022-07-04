@@ -839,7 +839,7 @@ ul.bullet{
 .collapse-button .fa {
 	color: #d1d1d1;
 	transition: .3s transform ease-in-out;
-	font-size: 2rem;
+	font-size: 1.2rem;
 }
 /* .collapsed .fa {
 	transform: rotate(-180deg);
