@@ -246,13 +246,13 @@ h1{font-size: 7em;font-family: 'black', cursive;}
 
 
 .ham{
-		z-index: 3;
-		position: absolute;
-		top: 0;
-		right: 0;
-		margin: 2em 1em;
-		text-align: right;
-	}
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 2em 1em;
+	text-align: right;
+}
 .logo{
 	top: 0;
 	left: 0;
@@ -261,7 +261,7 @@ h1{font-size: 7em;font-family: 'black', cursive;}
 	position: absolute;
 	margin: 3em auto;
 	right: 0;
-	}
+}
 .logo3{
 	width: 230px;
 	margin: 5em auto 2em;
@@ -799,7 +799,6 @@ a.nav-link{
 
 
 @media all and (min-width: 0px) and (max-width: 500px){
-
     a.nav-link{
       font-size: 2em;
     }
@@ -819,8 +818,6 @@ a.nav-link{
     }
 }
 
-}
-
 ul.bullet{
 	 list-style-image: url('https://pendulo.com/archivos/bullet.png');
 }
@@ -828,6 +825,7 @@ ul.bullet{
 .marker_1{
 	background-color: #f5e6d2;
 	padding: 1em;
+	font-size: 15px;
 }
 
 .box_dbline{
